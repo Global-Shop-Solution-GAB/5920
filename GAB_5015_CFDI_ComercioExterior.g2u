@@ -1,0 +1,1597 @@
+Program.Sub.ScreenSU.Start
+Gui.F_ComExtInventory..Create
+Gui.F_ComExtInventory..Caption("Comercio Exterior")
+Gui.F_ComExtInventory..Size(6585,3585)
+Gui.F_ComExtInventory..MinX(0)
+Gui.F_ComExtInventory..MinY(0)
+Gui.F_ComExtInventory..Position(0,0)
+Gui.F_ComExtInventory..BackColor(-2147483633)
+Gui.F_ComExtInventory..MousePointer(0)
+Gui.F_ComExtInventory..Event(UnLoad,F_ComExtInventory_UnLoad)
+Gui.F_ComExtInventory.lblFArancelaria.Create(Label,"Fraccion Arancelaria",True,2220,255,0,180,570,True,0,"Arial",8,-2147483633,0)
+Gui.F_ComExtInventory.txtFArancelaria.Create(TextBox,"",True,1890,300,0,2610,480,True,0,"Arial",8,-2147483643,1)
+Gui.F_ComExtInventory.txtFArancelaria.Locked(True)
+Gui.F_ComExtInventory.cmdFArancelaria.Create(Button)
+Gui.F_ComExtInventory.cmdFArancelaria.Size(360,360)
+Gui.F_ComExtInventory.cmdFArancelaria.Position(4650,435)
+Gui.F_ComExtInventory.cmdFArancelaria.Caption("^")
+Gui.F_ComExtInventory.cmdFArancelaria.Event(Click,cmdFArancelaria_Click)
+Gui.F_ComExtInventory.cmdUnidadAduana.Create(Button)
+Gui.F_ComExtInventory.cmdUnidadAduana.Size(360,360)
+Gui.F_ComExtInventory.cmdUnidadAduana.Position(4650,975)
+Gui.F_ComExtInventory.cmdUnidadAduana.Caption("^")
+Gui.F_ComExtInventory.cmdUnidadAduana.Event(Click,cmdUnidadAduana_Click)
+Gui.F_ComExtInventory.lblUnidadAduana.Create(Label,"Unidad Aduana",True,2220,255,0,180,1050,True,0,"Arial",8,-2147483633,0)
+Gui.F_ComExtInventory.Marca.Create(Label,"Marca",True,2220,255,0,180,1695,True,0,"Arial",8,-2147483633,0)
+Gui.F_ComExtInventory.txtUnidadAduana.Create(TextBox,"",True,1890,300,0,2610,990,True,0,"Arial",8,-2147483643,1)
+Gui.F_ComExtInventory.txtUnidadAduana.Locked(True)
+Gui.F_ComExtInventory.txtMarca.Create(TextBox,"",True,1890,300,0,2610,1560,True,0,"Arial",8,-2147483643,1)
+Gui.F_ComExtInventory.cmdSaveInv.Create(Button)
+Gui.F_ComExtInventory.cmdSaveInv.Size(1305,570)
+Gui.F_ComExtInventory.cmdSaveInv.Position(3750,2190)
+Gui.F_ComExtInventory.cmdSaveInv.Caption("Guardar")
+Gui.F_ComExtInventory.cmdSaveInv.Event(Click,cmdSaveInv_Click)
+Gui.F_ComExt_SalesOrder..Create
+Gui.F_ComExt_SalesOrder..Caption("Comercio Exterior")
+Gui.F_ComExt_SalesOrder..Size(10875,6255)
+Gui.F_ComExt_SalesOrder..MinX(0)
+Gui.F_ComExt_SalesOrder..MinY(0)
+Gui.F_ComExt_SalesOrder..Position(0,0)
+Gui.F_ComExt_SalesOrder..BackColor(-2147483633)
+Gui.F_ComExt_SalesOrder..MousePointer(0)
+Gui.F_ComExt_SalesOrder..Event(UnLoad,F_ComExt_SalesOrder_UnLoad)
+Gui.F_ComExt_SalesOrder.lblMotivoTraslado.Create(Label,"Motivo de Traslado",False,2235,375,0,120,6975,False,0,"Arial",9,-2147483633,0)
+Gui.F_ComExt_SalesOrder.txtMotivoTraslado.Create(TextBox,"",False,4455,300,0,4395,6945,False,0,"Arial",8,-2147483643,1)
+Gui.F_ComExt_SalesOrder.txtMotivoTraslado.Locked(True)
+Gui.F_ComExt_SalesOrder.lblTipoOperacion.Create(Label,"Tipo de Operacion",True,1935,255,0,165,675,True,0,"Arial",9,-2147483633,0)
+Gui.F_ComExt_SalesOrder.txtTipoOperacion.Create(TextBox,"",True,4455,300,0,4440,525,True,0,"Arial",8,-2147483643,1)
+Gui.F_ComExt_SalesOrder.txtTipoOperacion.Locked(True)
+Gui.F_ComExt_SalesOrder.lblClavePedimento.Create(Label,"Clave de Pedimento",True,2460,255,0,165,1215,True,0,"Arial",9,-2147483633,0)
+Gui.F_ComExt_SalesOrder.txtClavePedimento.Create(TextBox,"",True,4455,300,0,4440,1065,True,0,"Arial",8,-2147483643,1)
+Gui.F_ComExt_SalesOrder.txtClavePedimento.Locked(True)
+Gui.F_ComExt_SalesOrder.lblCertificadoOrigen.Create(Label,"Certificado de Origen",True,2370,255,0,165,1725,True,0,"Arial",9,-2147483633,0)
+Gui.F_ComExt_SalesOrder.txtCertificadoOrigen.Create(TextBox,"",True,4455,300,0,4440,1575,True,0,"Arial",8,-2147483643,1)
+Gui.F_ComExt_SalesOrder.txtCertificadoOrigen.Locked(True)
+Gui.F_ComExt_SalesOrder.cmdMotivoTraslado.Create(Button)
+Gui.F_ComExt_SalesOrder.cmdMotivoTraslado.Size(375,375)
+Gui.F_ComExt_SalesOrder.cmdMotivoTraslado.Position(8940,6900)
+Gui.F_ComExt_SalesOrder.cmdMotivoTraslado.Caption("^")
+Gui.F_ComExt_SalesOrder.cmdMotivoTraslado.Event(Click,cmdMotivoTraslado_Click)
+Gui.F_ComExt_SalesOrder.cmdMotivoTraslado.Enabled(False)
+Gui.F_ComExt_SalesOrder.cmdMotivoTraslado.Visible(False)
+Gui.F_ComExt_SalesOrder.cmdTipoOperacion.Create(Button)
+Gui.F_ComExt_SalesOrder.cmdTipoOperacion.Size(375,375)
+Gui.F_ComExt_SalesOrder.cmdTipoOperacion.Position(8985,480)
+Gui.F_ComExt_SalesOrder.cmdTipoOperacion.Caption("^")
+Gui.F_ComExt_SalesOrder.cmdTipoOperacion.Event(Click,cmdTipoOperacion_Click)
+Gui.F_ComExt_SalesOrder.cmdClavePedimento.Create(Button)
+Gui.F_ComExt_SalesOrder.cmdClavePedimento.Size(375,375)
+Gui.F_ComExt_SalesOrder.cmdClavePedimento.Position(8985,1020)
+Gui.F_ComExt_SalesOrder.cmdClavePedimento.Caption("^")
+Gui.F_ComExt_SalesOrder.cmdClavePedimento.Event(Click,cmdClavePedimento_Click)
+Gui.F_ComExt_SalesOrder.cmdCertificadoOrigen.Create(Button)
+Gui.F_ComExt_SalesOrder.cmdCertificadoOrigen.Size(375,375)
+Gui.F_ComExt_SalesOrder.cmdCertificadoOrigen.Position(8985,1530)
+Gui.F_ComExt_SalesOrder.cmdCertificadoOrigen.Caption("^")
+Gui.F_ComExt_SalesOrder.cmdCertificadoOrigen.Event(Click,cmdCertificadoOrigen_Click)
+Gui.F_ComExt_SalesOrder.lbl2.Create(Label,"No. Certificado de Origen",True,2580,255,0,165,2205,True,0,"Arial",9,-2147483633,0)
+Gui.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Create(TextBox,"",True,4455,300,0,4440,2115,True,0,"Arial",8,-2147483643,1)
+Gui.F_ComExt_SalesOrder.lblINCOTERM.Create(Label,"INCOTERM",True,2370,255,0,165,2715,True,0,"Arial",9,-2147483633,0)
+Gui.F_ComExt_SalesOrder.txtINCOTERM.Create(TextBox,"",True,4455,300,0,4440,2610,True,0,"Arial",8,-2147483643,1)
+Gui.F_ComExt_SalesOrder.txtINCOTERM.Locked(True)
+Gui.F_ComExt_SalesOrder.cmdINCOTERM.Create(Button)
+Gui.F_ComExt_SalesOrder.cmdINCOTERM.Size(375,375)
+Gui.F_ComExt_SalesOrder.cmdINCOTERM.Position(8985,2565)
+Gui.F_ComExt_SalesOrder.cmdINCOTERM.Caption("^")
+Gui.F_ComExt_SalesOrder.cmdINCOTERM.Event(Click,cmdINCOTERM_Click)
+Gui.F_ComExt_SalesOrder.lblNoExConUnEu.Create(Label,"No. Exportador Confiable Union Europea",False,4170,255,0,60,8955,False,0,"Arial",9,-2147483633,0)
+Gui.F_ComExt_SalesOrder.txtNoExConUnEu.Create(TextBox,"",False,4455,300,0,4395,8865,False,0,"Arial",8,-2147483643,1)
+Gui.F_ComExt_SalesOrder.lblSubdivision.Create(Label,"Subdivision",True,4170,255,0,180,3285,True,0,"Arial",9,-2147483633,0)
+Gui.F_ComExt_SalesOrder.txtSubdivision.Create(TextBox,"",True,4455,300,0,4455,3165,True,0,"Arial",8,-2147483643,1)
+Gui.F_ComExt_SalesOrder.txtSubdivision.Locked(True)
+Gui.F_ComExt_SalesOrder.cmdSubdivision.Create(Button)
+Gui.F_ComExt_SalesOrder.cmdSubdivision.Size(375,375)
+Gui.F_ComExt_SalesOrder.cmdSubdivision.Position(9000,3135)
+Gui.F_ComExt_SalesOrder.cmdSubdivision.Caption("^")
+Gui.F_ComExt_SalesOrder.cmdSubdivision.Event(Click,cmdSubdivision_Click)
+Gui.F_ComExt_SalesOrder.lblObservaciones.Create(Label,"Observaciones",True,4170,255,0,180,3720,True,0,"Arial",9,-2147483633,0)
+Gui.F_ComExt_SalesOrder.txtObervaciones.Create(TextBoxR)
+Gui.F_ComExt_SalesOrder.txtObervaciones.Size(4440,855)
+Gui.F_ComExt_SalesOrder.txtObervaciones.Position(4455,3660)
+Gui.F_ComExt_SalesOrder.lblPTaxID.Create(Label,"Propietario Tax ID",False,3555,255,0,165,6570,False,0,"Arial",9,-2147483633,0)
+Gui.F_ComExt_SalesOrder.txtPTaxID.Create(TextBox,"",False,4455,300,0,4395,6510,False,0,"Arial",8,-2147483643,1)
+Gui.F_ComExt_SalesOrder.lblPResFiscal.Create(Label,"Propietario Residencia Fiscal",False,3975,255,0,120,7470,False,0,"Arial",9,-2147483633,0)
+Gui.F_ComExt_SalesOrder.txtPResFiscal.Create(TextBox,"",False,4455,300,0,4395,7410,False,0,"Arial",8,-2147483643,1)
+Gui.F_ComExt_SalesOrder.txtPResFiscal.Locked(True)
+Gui.F_ComExt_SalesOrder.txtVUnitAduana.Create(TextBox,"",False,4455,300,0,4395,7920,False,0,"Arial",8,-2147483643,1)
+Gui.F_ComExt_SalesOrder.cmdPResFiscal.Create(Button)
+Gui.F_ComExt_SalesOrder.cmdPResFiscal.Size(375,375)
+Gui.F_ComExt_SalesOrder.cmdPResFiscal.Position(8940,7380)
+Gui.F_ComExt_SalesOrder.cmdPResFiscal.Caption("^")
+Gui.F_ComExt_SalesOrder.cmdPResFiscal.Event(Click,cmdPResFiscal_Click)
+Gui.F_ComExt_SalesOrder.cmdPResFiscal.Enabled(False)
+Gui.F_ComExt_SalesOrder.cmdPResFiscal.Visible(False)
+Gui.F_ComExt_SalesOrder.lblVUnitAduana.Create(Label,"Valor Unitario Aduana",False,2985,255,0,120,7980,False,0,"Arial",9,-2147483633,0)
+Gui.F_ComExt_SalesOrder.cmdSaveSO.Create(Button)
+Gui.F_ComExt_SalesOrder.cmdSaveSO.Size(1590,570)
+Gui.F_ComExt_SalesOrder.cmdSaveSO.Position(8220,4800)
+Gui.F_ComExt_SalesOrder.cmdSaveSO.Caption("Guardar")
+Gui.F_ComExt_SalesOrder.cmdSaveSO.Event(Click,cmdSaveSO_Click)
+Gui.F_ComExt_SalesOrder.cmdSaveSO.FontSize(10)
+Gui.F_ComExt_SalesOrder.lblCantidadAduana.Create(Label,"Cantidad Aduana",False,2985,255,0,120,8520,False,0,"Arial",9,-2147483633,0)
+Gui.F_ComExt_SalesOrder.txtCantidadAduana.Create(TextBox,"",False,4455,300,0,4395,8415,False,0,"Arial",8,-2147483643,1)
+Gui.F_ComExt_SalesOrder.cmdClear.Create(Button)
+Gui.F_ComExt_SalesOrder.cmdClear.Size(1590,570)
+Gui.F_ComExt_SalesOrder.cmdClear.Position(6435,4785)
+Gui.F_ComExt_SalesOrder.cmdClear.Caption("Limpiar")
+Gui.F_ComExt_SalesOrder.cmdClear.FontSize(10)
+Gui.F_ComExt_SalesOrder.cmdClear.Event(Click,cmdClear_Click)
+Gui.f_ComExt_Company..Create
+Gui.f_ComExt_Company..Caption("Comercio Exterior Empresa")
+Gui.f_ComExt_Company..Size(9195,8625)
+Gui.f_ComExt_Company..MinX(0)
+Gui.f_ComExt_Company..MinY(0)
+Gui.f_ComExt_Company..Position(0,0)
+Gui.f_ComExt_Company..BackColor(-2147483633)
+Gui.f_ComExt_Company..MousePointer(0)
+Gui.f_ComExt_Company..Event(UnLoad,f_ComExt_Company_UnLoad1)
+Gui.f_ComExt_Company.lblEmpresa.Create(Label,"Nombre de Empresa",True,2940,255,0,270,1095,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.lblRFC.Create(Label,"RFC",True,1935,255,0,270,1665,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.lblCalle.Create(Label,"Calle",True,1935,255,0,270,2175,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.lblNumExt.Create(Label,"Numero Exterior",True,1935,255,0,270,2625,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.lblNumInt.Create(Label,"Numero Interior",True,1935,255,0,270,3105,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.lblColonia.Create(Label,"Colonia",True,1935,255,0,270,4065,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.lblLocalidad.Create(Label,"Localidad",True,1935,255,0,270,4605,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.lblMunicipio.Create(Label,"Municipio",True,1935,255,0,270,5115,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.lblEstado.Create(Label,"Estado",True,1935,255,0,270,5610,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.lblPais.Create(Label,"Pais",True,1935,255,0,270,6105,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.lblNumExtConUE.Create(Label,"Informacion Bancaria Para Deposito",True,3900,255,0,270,6585,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.txtEmpresa.Create(TextBox,"",True,3630,300,0,4305,1035,True,0,"Arial",8,-2147483643,1)
+Gui.f_ComExt_Company.txtEmpresa.Locked(True)
+Gui.f_ComExt_Company.txtRFC.Create(TextBox,"",True,3630,300,0,4305,1605,True,0,"Arial",8,-2147483643,1)
+Gui.f_ComExt_Company.txtRFC.Event(Change,Company_Change)
+Gui.f_ComExt_Company.txtRFC.MaxLength(13)
+Gui.f_ComExt_Company.txtCalle.Create(TextBox,"",True,3630,300,0,4305,2115,True,0,"Arial",8,-2147483643,1)
+Gui.f_ComExt_Company.txtCalle.Event(Change,Company_Change)
+Gui.f_ComExt_Company.txtNumExt.Create(TextBox,"",True,3630,300,0,4305,2565,True,0,"Arial",8,-2147483643,1)
+Gui.f_ComExt_Company.txtNumInt.Create(TextBox,"",True,3630,300,0,4305,3045,True,0,"Arial",8,-2147483643,1)
+Gui.f_ComExt_Company.txtColonia.Create(TextBox,"",True,3630,300,0,4305,4005,True,0,"Arial",8,-2147483643,1)
+Gui.f_ComExt_Company.txtColonia.Locked(True)
+Gui.f_ComExt_Company.txtColonia.Event(Click,cmdColonia_Click)
+Gui.f_ComExt_Company.txtLocalidad.Create(TextBox,"",True,3630,300,0,4305,4545,True,0,"Arial",8,-2147483643,1)
+Gui.f_ComExt_Company.txtLocalidad.Locked(True)
+Gui.f_ComExt_Company.txtLocalidad.Event(Click,cmdLocalidad_Click)
+Gui.f_ComExt_Company.txtMunicipio.Create(TextBox,"",True,3630,300,0,4305,5055,True,0,"Arial",8,-2147483643,1)
+Gui.f_ComExt_Company.txtMunicipio.Locked(True)
+Gui.f_ComExt_Company.txtMunicipio.Event(Click,cmdMunicipo_Click)
+Gui.f_ComExt_Company.txtEstado.Create(TextBox,"",True,3630,300,0,4305,5550,True,0,"Arial",8,-2147483643,1)
+Gui.f_ComExt_Company.txtEstado.Locked(True)
+Gui.f_ComExt_Company.txtEstado.Event(Click,cmdEstado_Click)
+Gui.f_ComExt_Company.txtNumExtConUE.Create(TextBox,"",True,3630,300,0,4305,6525,True,0,"Arial",8,-2147483643,1)
+Gui.f_ComExt_Company.txtNumExtConUE.MaxLength(100)
+Gui.f_ComExt_Company.txtPais.Create(TextBox,"",True,3630,300,0,4305,6045,True,0,"Arial",8,-2147483643,1)
+Gui.f_ComExt_Company.txtPais.Locked(True)
+Gui.f_ComExt_Company.txtPais.Event(Click,cmdPais_Click)
+Gui.f_ComExt_Company.cmdColonia.Create(Button)
+Gui.f_ComExt_Company.cmdColonia.Size(360,375)
+Gui.f_ComExt_Company.cmdColonia.Position(8130,3960)
+Gui.f_ComExt_Company.cmdColonia.Caption("^")
+Gui.f_ComExt_Company.cmdColonia.DefaultValue("")
+Gui.f_ComExt_Company.cmdColonia.Event(Click,cmdColonia_Click)
+Gui.f_ComExt_Company.cmdLocalidad.Create(Button)
+Gui.f_ComExt_Company.cmdLocalidad.Size(360,375)
+Gui.f_ComExt_Company.cmdLocalidad.Position(8130,4545)
+Gui.f_ComExt_Company.cmdLocalidad.Caption("^")
+Gui.f_ComExt_Company.cmdLocalidad.DefaultValue("")
+Gui.f_ComExt_Company.cmdLocalidad.Event(Click,cmdLocalidad_Click)
+Gui.f_ComExt_Company.cmdMunicipo.Create(Button)
+Gui.f_ComExt_Company.cmdMunicipo.Size(360,375)
+Gui.f_ComExt_Company.cmdMunicipo.Position(8130,5055)
+Gui.f_ComExt_Company.cmdMunicipo.Caption("^")
+Gui.f_ComExt_Company.cmdMunicipo.DefaultValue("")
+Gui.f_ComExt_Company.cmdMunicipo.Event(Click,cmdMunicipo_Click)
+Gui.f_ComExt_Company.cmdEstado.Create(Button)
+Gui.f_ComExt_Company.cmdEstado.Size(360,375)
+Gui.f_ComExt_Company.cmdEstado.Position(8130,5550)
+Gui.f_ComExt_Company.cmdEstado.Caption("^")
+Gui.f_ComExt_Company.cmdEstado.DefaultValue("")
+Gui.f_ComExt_Company.cmdEstado.Event(Click,cmdEstado_Click)
+Gui.f_ComExt_Company.cmdPais.Create(Button)
+Gui.f_ComExt_Company.cmdPais.Size(360,375)
+Gui.f_ComExt_Company.cmdPais.Position(8130,6045)
+Gui.f_ComExt_Company.cmdPais.Caption("^")
+Gui.f_ComExt_Company.cmdPais.DefaultValue("")
+Gui.f_ComExt_Company.cmdPais.Event(Click,cmdPais_Click)
+Gui.f_ComExt_Company.cmdSaveCompany.Create(Button)
+Gui.f_ComExt_Company.cmdSaveCompany.Size(1635,570)
+Gui.f_ComExt_Company.cmdSaveCompany.Position(7080,7305)
+Gui.f_ComExt_Company.cmdSaveCompany.Caption("Guardar")
+Gui.f_ComExt_Company.cmdSaveCompany.FontSize(10)
+Gui.f_ComExt_Company.cmdSaveCompany.Event(Click,cmdSaveCompany_click)
+Gui.f_ComExt_Company.cmdCompany.Create(Button)
+Gui.f_ComExt_Company.cmdCompany.Size(360,375)
+Gui.f_ComExt_Company.cmdCompany.Position(8130,1035)
+Gui.f_ComExt_Company.cmdCompany.Caption("^")
+Gui.f_ComExt_Company.cmdCompany.Event(Click,cmdCompany_Click)
+Gui.f_ComExt_Company.cmdCP.Create(Button)
+Gui.f_ComExt_Company.cmdCP.Size(360,375)
+Gui.f_ComExt_Company.cmdCP.Position(8130,3495)
+Gui.f_ComExt_Company.cmdCP.Caption("^")
+Gui.f_ComExt_Company.cmdCP.DefaultValue("")
+Gui.f_ComExt_Company.cmdCP.Event(Click,cmdCP_Click)
+Gui.f_ComExt_Company.txtCP.Create(TextBox,"",True,3630,300,0,4305,3525,True,0,"Arial",8,-2147483643,1)
+Gui.f_ComExt_Company.txtCP.Locked(True)
+Gui.f_ComExt_Company.lblCP.Create(Label,"Codigo Postal",True,1935,255,0,270,3615,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.lblNumActPrep.Create(Label,"Actividad Preponderante",False,3900,255,0,270,7050,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.txtNumActPrep.Create(TextBox,"",False,3630,300,0,4305,6975,True,0,"Arial",8,-2147483643,1)
+Gui.f_ComExt_Company.txtNumActPrep.MaxLength(150)
+Gui.f_ComExt_Company.lblNUMREGOAUTEXP.Create(Label,"Numero de Registro o Autorizacion expendido para operar como:",False,6885,330,0,270,7515,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.lblNumMaq.Create(Label,"Maquiladora",False,3900,255,0,270,8040,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.txtNumMaq.Create(TextBox,"",False,3630,300,0,4305,7980,True,0,"Arial",8,-2147483643,1)
+Gui.f_ComExt_Company.txtNumMaq.MaxLength(100)
+Gui.f_ComExt_Company.lblNumPITEX.Create(Label,"PITEX",False,3900,255,0,270,8535,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.txtNumPITEX.Create(TextBox,"",False,3630,300,0,4305,8475,True,0,"Arial",8,-2147483643,1)
+Gui.f_ComExt_Company.txtNumPITEX.MaxLength(100)
+Gui.f_ComExt_Company.lblNumECEX.Create(Label,"ECEX",False,3900,255,0,270,8985,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.txtNumECEX.Create(TextBox,"",False,3630,300,0,4305,8925,True,0,"Arial",8,-2147483643,1)
+Gui.f_ComExt_Company.txtNumECEX.MaxLength(100)
+Gui.f_ComExt_Company.lblNumPPSEC.Create(Label,"Programa de Promocion Sectorial",False,3900,255,0,270,9525,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.txtNumPPSEC.Create(TextBox,"",False,3630,300,0,4305,9465,True,0,"Arial",8,-2147483643,1)
+Gui.f_ComExt_Company.txtNumPPSEC.MaxLength(100)
+Gui.f_ComExt_Company.lblAnexo24.Create(Label,"Anexo 24",False,1815,255,0,270,540,True,0,"Arial",9,-2147483633,0)
+Gui.f_ComExt_Company.chkAnexo24.Create(CheckBox)
+Gui.f_ComExt_Company.chkAnexo24.Size(1560,360)
+Gui.f_ComExt_Company.chkAnexo24.Position(2490,480)
+Gui.f_ComExt_Company.chkAnexo24.Event(Click,chkAnexo24_Click)
+Gui.f_ComExt_Company.chkAnexo24.Visible(False)
+Gui.F_ComExt_Destinatario..Create
+Gui.F_ComExt_Destinatario..Caption("Nodo Destinatario")
+Gui.F_ComExt_Destinatario..Size(11490,4290)
+Gui.F_ComExt_Destinatario..MinX(0)
+Gui.F_ComExt_Destinatario..MinY(0)
+Gui.F_ComExt_Destinatario..Position(0,0)
+Gui.F_ComExt_Destinatario..BackColor(-2147483633)
+Gui.F_ComExt_Destinatario..MousePointer(0)
+Gui.F_ComExt_Destinatario..Event(UnLoad,Unload)
+Gui.F_ComExt_Destinatario.txtClaveEnvio.Create(TextBox,"",True,1410,300,0,9615,195,True,0,"Arial",8,-2147483643,1)
+Gui.F_ComExt_Destinatario.txtClaveEnvio.Locked(True)
+Gui.F_ComExt_Destinatario.lblClaveEnvio.Create(Label,"Clave de Envio",True,1740,255,0,7620,255,True,0,"Arial",10,-2147483633,0)
+Gui.F_ComExt_Destinatario.lblCliente.Create(Label,"Numero de Cliente",True,1935,255,0,195,255,True,0,"Arial",10,-2147483633,0)
+Gui.F_ComExt_Destinatario.txtCliente.Create(TextBox,"",True,1230,300,0,2385,195,True,0,"Arial",8,-2147483643,1)
+Gui.F_ComExt_Destinatario.txtCliente.Locked(True)
+Gui.F_ComExt_Destinatario.lblEstado.Create(Label,"Estado",True,1935,255,0,2565,1170,True,0,"Arial",10,-2147483633,0)
+Gui.F_ComExt_Destinatario.txtEstado.Create(TextBox,"",True,2370,300,0,4755,1110,True,0,"Arial",8,-2147483643,1)
+Gui.F_ComExt_Destinatario.txtEstado.Locked(True)
+Gui.F_ComExt_Destinatario.lblCP.Create(Label,"Codigo Postal",True,1935,255,0,2610,2355,True,0,"Arial",10,-2147483633,0)
+Gui.F_ComExt_Destinatario.txtCP.Create(TextBox,"",True,2370,300,0,4800,2265,True,0,"Arial",8,-2147483643,1)
+Gui.F_ComExt_Destinatario.txtCP.MaxLength(6)
+Gui.F_ComExt_Destinatario.lblPais.Create(Label,"Pais",True,1935,255,0,2595,1815,True,0,"Arial",10,-2147483633,0)
+Gui.F_ComExt_Destinatario.txtPais.Create(TextBox,"",True,2370,300,0,4785,1710,True,0,"Arial",8,-2147483643,1)
+Gui.F_ComExt_Destinatario.txtPais.Locked(True)
+Gui.F_ComExt_Destinatario.cmdSaveDestinatario.Create(Button)
+Gui.F_ComExt_Destinatario.cmdSaveDestinatario.Size(2295,525)
+Gui.F_ComExt_Destinatario.cmdSaveDestinatario.Position(7935,2865)
+Gui.F_ComExt_Destinatario.cmdSaveDestinatario.Caption("GUARDAR")
+Gui.F_ComExt_Destinatario.cmdSaveDestinatario.Event(Click,cmdSaveDestinatario_Click)
+Gui.F_ComExt_Destinatario.cmdEstado.Create(Button)
+Gui.F_ComExt_Destinatario.cmdEstado.Size(405,375)
+Gui.F_ComExt_Destinatario.cmdEstado.Position(7275,1065)
+Gui.F_ComExt_Destinatario.cmdEstado.Caption("^")
+Gui.F_ComExt_Destinatario.cmdEstado.Event(Click,cmdEstado_Click1)
+Gui.F_ComExt_Destinatario.cmdPais.Create(Button)
+Gui.F_ComExt_Destinatario.cmdPais.Size(405,375)
+Gui.F_ComExt_Destinatario.cmdPais.Position(7305,1650)
+Gui.F_ComExt_Destinatario.cmdPais.Caption("^")
+Gui.F_ComExt_Destinatario.cmdPais.Event(Click,cmdPais_Click1)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+v.Global.sFA.Declare
+V.Global.sPO.Declare
+v.Global.sReceiver.Declare
+v.Global.sLot.Declare
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.ODBC.Connection!CONX.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+
+
+''''''''''''INVENTORY MASTER AUTOPOPULATE'''''''''''
+F.Intrinsic.Control.If(v.Caller.Hook,=,10120)
+	V.Passed.000069.Set("Com. Exterior")
+	f.Intrinsic.Control.If(v.Passed.000007.Trim,=,"")
+		F.Intrinsic.UI.ChangeCallerProperty(variable.passed.000069, "LOCK", 1)
+	f.Intrinsic.Control.Else
+		F.Intrinsic.UI.ChangeCallerProperty(variable.passed.000069, "LOCK", 0)
+	f.Intrinsic.Control.EndIf
+''''''''''''INVENTORY MASTER SCRIPT 2'''''''''''
+F.Intrinsic.Control.ElseIf(v.Caller.Hook,=,10220)
+	F.Intrinsic.Control.CallSub(F_ComExtInventory_Load)
+	Gui.F_ComExtInventory..Show
+''''''''''''INVENTORY MASTER PART LOAD'''''''''''
+F.Intrinsic.Control.ElseIf(v.Caller.Hook,=,10125)
+	f.Intrinsic.Control.If(v.Passed.000007.Trim,=,"")
+			F.Intrinsic.UI.ChangeCallerProperty(variable.passed.000069, "LOCK", 1)
+	f.Intrinsic.Control.Else
+			F.Intrinsic.UI.ChangeCallerProperty(variable.passed.000069, "LOCK", 0)
+	f.Intrinsic.Control.EndIf
+''''''''''''SALES ORDER AUTOPOPULATE'''''''''''
+F.Intrinsic.Control.ElseIf(v.Caller.Hook,=,11560)
+	V.Passed.000203.Set("Com. Exterior")
+	F.Intrinsic.Control.If(v.Passed.000003.Trim,=,"")
+		f.Intrinsic.UI.ChangeCallerProperty(variable.Passed.000203, "LOCK", 1)
+	f.Intrinsic.Control.EndIf	
+''''''''''''SALES ORDER SCRIPT 3'''''''''''
+F.Intrinsic.Control.Elseif(v.Caller.Hook,=,11930)
+	F.Intrinsic.Control.CallSub(F_ComExt_SalesOrder_Load)
+	Gui.F_ComExt_SalesOrder..Show
+''''''''''''SALES ORDER LOAD'''''''''''
+F.Intrinsic.Control.ElseIf(v.Caller.Hook,=,11565)
+	F.Intrinsic.Control.If(v.Passed.000021.Trim,=,"XEXX010101000")
+		f.Intrinsic.UI.ChangeCallerProperty(variable.Passed.000203, "LOCK", 0)
+	f.Intrinsic.Control.Else
+		f.Intrinsic.UI.ChangeCallerProperty(variable.Passed.000203, "LOCK", 1)
+	f.Intrinsic.Control.EndIf
+	
+''''''''''''SALES ORDER PRE SAVE HOOK'''''''''''
+F.Intrinsic.Control.ElseIf(v.Caller.Hook,=,11869)
+	F.Intrinsic.Control.If(v.Passed.000021.Trim,=,"XEXX010101000")
+		'IF RFC XEXX010101000 THEN REQUEST TO FILL COMERCIO EXTERIOR INFO
+		f.Intrinsic.Control.CallSub(COMEXT_Info_Check)
+	f.Intrinsic.Control.Else
+		'CONTINUE WITH PROCESS
+	f.Intrinsic.Control.EndIf
+
+''''''''''''SALES ORDER OPEN HEADER MAINT FOR BATCH POPULATE'''''''''''
+F.Intrinsic.Control.ElseIf(v.Caller.Hook,=,15200)
+	V.Passed.000210.Set("Com. Exterior")
+	f.Intrinsic.Control.If(v.Passed.009001.Trim,=,"")
+		F.Intrinsic.UI.ChangeCallerProperty(variable.passed.000210, "LOCK", 0)
+	f.Intrinsic.Control.Else
+		f.Intrinsic.UI.ChangeCallerProperty(variable.Passed.000210, "LOCK", 1)
+	f.Intrinsic.Control.EndIf	
+'	f.Intrinsic.Control.EndIf
+''''''''''''SALES ORDER OPEN HEADER MAINT FOR BATCH SCRIPT 3'''''''''''
+F.Intrinsic.Control.ElseIf(v.Caller.Hook,=,15120)
+	F.Intrinsic.Control.CallSub(F_ComExt_OpenSalesOrder_Load)
+	Gui.F_ComExt_SalesOrder..Show		
+''''''''''''SALES ORDER OPEN HEADER MAINT FOR BATCH LOAD'''''''''''
+F.Intrinsic.Control.ElseIf(v.Caller.Hook,=,28701)
+	F.Intrinsic.Control.If(v.Passed.000021.Trim,=,"XEXX010101000")
+		f.Intrinsic.UI.ChangeCallerProperty(variable.Passed.000210, "LOCK", 0)
+	f.Intrinsic.Control.Else
+		f.Intrinsic.UI.ChangeCallerProperty(variable.Passed.000210, "LOCK", 1)
+	f.Intrinsic.Control.EndIf	
+
+''''''''''''COMPANY INFO'''''''''''
+F.Intrinsic.Control.ElseIf(v.Caller.Switches,=,"C")
+		Gui.f_ComExt_Company..Show
+
+
+''''''''''''NODO DESTINATARIO '''''''''''
+
+'Accounts Receivable > File > Customers > Open > Add'l Ship To > Select Ship to Addrs > Customer Ship to Populate Hook
+F.Intrinsic.Control.ElseIf(v.Caller.Hook,=,14410)
+	V.Passed.000203.Set("Nodo Dest.")
+'Accounts Receivable > File > Customers > Open > Add'l Ship To > Select Ship to Addrs > Customer Ship to Script 3
+F.Intrinsic.Control.ElseIf(v.Caller.Hook,=,14440)	
+	F.Intrinsic.Control.CallSub(F_ComExt_Destinatario_Load)
+	
+		
+''ANEXO 24'
+
+''CUSTOMER MASTER
+'F.Intrinsic.Control.ElseIf(v.Caller.Hook,=,14350)
+'	V.Passed.000202.Set("Anexo 24")
+'	
+''CUSTOMER MASTER QUERY 2
+'F.Intrinsic.Control.ElseIf(v.Caller.Hook,=,14370)
+'	V.Passed.000202.Set("Anexo 24")
+'	F.Intrinsic.Control.CallSub(F_Anexo24_Load)
+'	Gui.F_Anex24_Customer..Show
+''ANEXO 24 VENDOR MASTER
+'F.Intrinsic.Control.ElseIf(v.Caller.Hook,=,14460)
+'	V.Passed.000024.Set("Anexo 24")
+'F.Intrinsic.Control.If(V.Passed.000002,=,"")
+'	f.Intrinsic.UI.ChangeCallerProperty(V.Passed.000024, "LOCK", 1)
+'F.Intrinsic.Control.Else
+'	f.Intrinsic.UI.ChangeCallerProperty(V.Passed.000024, "LOCK", 0)
+'F.Intrinsic.Control.EndIf
+''VENDOR SELECTED
+'F.Intrinsic.Control.ElseIf(v.Caller.Hook,=,14461)
+'F.Intrinsic.Control.If(V.Passed.000002,=,"")
+'	f.Intrinsic.UI.ChangeCallerProperty(V.Passed.000024, "LOCK", 1)
+'F.Intrinsic.Control.Else
+'	f.Intrinsic.UI.ChangeCallerProperty(V.Passed.000024, "LOCK", 0)
+'F.Intrinsic.Control.EndIf
+''VENDOR MASTER SCRIPT 2
+'F.Intrinsic.Control.ElseIf(v.Caller.Hook,=,14500)
+'	V.Passed.000024.Set("Anexo 24")
+'	F.Intrinsic.Control.CallSub(F_Anexo24Vendor_Load)	
+'	GUI.F_Anex24_Vendor..Show
+''ANEXO 24 FIXED ASSETS POPULATE
+'F.Intrinsic.Control.ElseIf(v.Caller.Hook,=,38001)
+'	V.Passed.000306.Set("Anexo 24")
+'	
+''ANEXO 24 FIXED ASSETS > NEW QUERY 3
+'F.Intrinsic.Control.ElseIf(v.Caller.Hook,=,38006)
+'	v.Global.sFA.Set(v.Passed.000001)
+'	F.Intrinsic.Control.CallSub(F_Anexo24FIXA_Load)
+'	Gui.F_Anexo24_TIGIE..Show
+''ANEXO 24 PO RECEIVER POPULATE HOOK 15020 ( PO 000002 / RECEIVER 000010)
+'F.Intrinsic.Control.ElseIf(V.Caller.Hook,=,15020)
+
+''ANEXO 24 PO RECEIVER SELECT PO HOOK 15021 
+'F.Intrinsic.Control.ElseIf(V.Caller.Hook,=,15021)
+
+'V.Global.sPO.Set(v.Passed.000002)
+'v.Global.sReceiver.Set(v.Passed.000010)
+
+''ANEXO 24 LOT/BIN POPULATE HOOK 16400 (LOT 000061)
+'F.Intrinsic.Control.ElseIf(V.Caller.Hook,=,16400)
+'v.Global.sLot.Set(v.Passed.000061)
+'V.Passed.000095.Set("Pedimento")
+
+''ANEXO 24 LOT/BIN SCRIPT 3 HOOK 16460 (LOT 000061)
+'F.Intrinsic.Control.ElseIf(V.Caller.Hook,=,16460)
+'F.Intrinsic.Control.CallSub(F_Anexo24Pedimento_Load)
+'f.Intrinsic.UI.Msgbox(V.Global.sPO)
+'f.Intrinsic.UI.Msgbox(V.Global.sReceiver)
+
+'gui.F_Anex24_Pedimento..Show
+
+F.Intrinsic.Control.EndIF
+Program.Sub.Main.End
+
+''''''''''''INVENTORY'''''''''''
+Program.Sub.cmdSaveInv_Click.Start
+V.Local.sSQL.Declare
+v.Local.sPart.Declare
+
+'Save part info into custom table CFDI_COMEXT_INV 
+F.Intrinsic.String.GSSPartString(V.Passed.000007,V.Passed.000008,V.Local.sPart)
+F.Intrinsic.String.Build("SELECT * FROM CFDI_COMEXT_INV WHERE PART = '{0}'",V.Local.sPart.Trim,V.Local.sSQL)
+F.ODBC.Connection!CONX.OpenLocalRecordsetRW("RSTCA",v.Local.sSQL)
+F.Intrinsic.Control.If(v.ODBC.CONX!RSTCA.EOF,=,True)
+	F.ODBC.CONX!RSTCA.AddNew
+	F.ODBC.Conx!RSTCA.Set!PART(V.Local.sPart)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.CONX!RSTCA.Set!FRACCION_ARANCELARIA(V.Screen.F_ComExtInventory!txtFArancelaria.Text)
+	F.ODBC.CONX!RSTCA.Set!UNIDAD_ADUANA(V.Screen.F_ComExtInventory!txtUnidadAduana.Text)
+	F.ODBC.CONX!RSTCA.Set!MARCA(V.Screen.F_ComExtInventory!txtMarca.Text)
+	F.ODBC.Conx!RSTCA.Update
+	F.Intrinsic.UI.Msgbox("DATOS GUARDADOS")
+	F.ODBC.Conx!RSTCA.Close
+Program.Sub.cmdSaveInv_Click.End
+
+Program.Sub.cmdFArancelaria_Click.Start
+v.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+v.Local.sTemp.Declare(string)
+v.Local.sTitles.Declare(string)
+v.Local.iWidths.Declare(long)
+
+'Load Custom Browser from Custom Table CFDI_C_FARANCELARIA and save into form
+F.Intrinsic.String.Split("FRACCION_ARANCELARIA*!*DESCRIPCION","*!*",v.local.sTitles)
+F.Intrinsic.String.Split("100*!*800","*!*",v.local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE FRACCION_ARANCELARIA DESDE CATALAGO DEL SAT","conx","select * from CFDI_C_FARANCELARIA",v.Local.sTitles,v.Local.iWidths,v.Local.sRet)
+F.Intrinsic.Control.If(v.Local.sRet,"=","***CANCEL***")
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+	Gui.F_ComExtInventory.txtFArancelaria.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.EndIf
+Program.Sub.cmdFArancelaria_Click.End
+
+Program.Sub.cmdUnidadAduana_Click.Start
+v.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+v.Local.sTemp.Declare(string)
+v.Local.sTitles.Declare(string)
+v.Local.iWidths.Declare(long)
+
+'Load Custom Browser from Custom Table CFDI_C_UNIDADADUANA  and save into form
+F.Intrinsic.String.Split("UNIDAD_ADUANA*!*DESCRIPCION","*!*",v.local.sTitles)
+F.Intrinsic.String.Split("100*!*800","*!*",v.local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE UNIDAD_ADUANA DESDE CATALAGO DEL SAT","conx","select * from CFDI_C_UNIDADADUANA",v.Local.sTitles,v.Local.iWidths,v.Local.sRet)
+F.Intrinsic.Control.If(v.Local.sRet,"=","***CANCEL***")
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+	Gui.F_ComExtInventory.txtUnidadAduana.Text(V.Local.sRet(0).Trim)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.cmdUnidadAduana_Click.End
+
+Program.Sub.F_ComExtInventory_Load.Start
+V.Local.sPart.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.sPO.Declare(String)
+
+'Load existing data into Inventory form
+F.Intrinsic.String.GSSPartString(V.Passed.000007,V.Passed.000008,V.Local.sPart)
+F.Intrinsic.String.Concat("select * from CFDI_COMEXT_INV WHERE PART ='",V.Local.sPart,"'",V.Local.sSql)
+F.ODBC.Connection!conx.OpenRecordsetRO("rstLoad",V.Local.sSql)
+F.Intrinsic.Control.If(V.ODBC.conx!rstLoad.EOF,=,"False")
+	F.Intrinsic.Control.If(V.ODBC.conx!rstLoad.FieldValTrim!PART,=,"0")
+	Gui.F_ComExtInventory.txtFArancelaria.Value(1)
+	Gui.F_ComExtInventory.txtCantAduana.Value(2)
+	Gui.F_ComExtInventory.txtUnidadAduana.Value(3)
+	Gui.F_ComExtInventory.txtMarca.Value(4)
+	F.Intrinsic.Control.Endif
+	Gui.F_ComExtInventory.txtFArancelaria.Text(V.ODBC.conx!rstLoad.FieldValTrim!FRACCION_ARANCELARIA)
+	Gui.F_ComExtInventory.txtUnidadAduana.Text(V.ODBC.conx!rstLoad.FieldValTrim!UNIDAD_ADUANA)
+	Gui.F_ComExtInventory.txtMarca.Text(V.ODBC.conx!rstLoad.FieldValTrim!MARCA)
+F.Intrinsic.Control.EndIf
+Program.Sub.F_ComExtInventory_Load.End
+
+''''''''''' 'SALES ORDER'''''''''''
+Program.Sub.COMEXT_Info_Check.Start
+v.Local.sOrderNo.Declare
+v.Local.sSQL.Declare
+v.Local.sComExtInfoCheck.Declare
+
+v.Local.sOrderNo.Set(v.Passed.000003.String)
+f.Intrinsic.String.LPad(v.Local.sOrderNo,"0",7,v.Local.sOrderNo)
+
+f.Intrinsic.String.Build("select count(order_no) from CFDI_COMEXT_OE_SO where order_no = '{0}'",v.Local.sOrderNo,v.Local.sSQL)
+F.ODBC.Connection!conx.ExecuteAndReturn(v.Local.sSQL,v.Local.sComExtInfoCheck)
+
+f.Intrinsic.Control.If(v.Local.sComExtInfoCheck,=,0)
+	F.Intrinsic.UI.Msgbox("Se Requiere Llenar La Informacion De COMERCIO EXTERIOR Para Continuar. Favor de llenar la informacion y GUARDAR Orden de Venta de nuevo.")
+	V.Passed.777777.Set(1)
+	gui.F_ComExt_SalesOrder..Show
+f.Intrinsic.Control.EndIf
+
+Program.Sub.COMEXT_Info_Check.End
+
+Program.Sub.cmdSaveSO_SavetoDB.Start
+V.Local.sSQL.Declare(String)
+v.local.sOrderNo.Declare
+'Function.Intrinsic.Debug.InvokeDebugger
+'Function.Intrinsic.Debug.Stop
+
+'f.Intrinsic.UI.Msgbox(v.Passed.009001.String)
+v.Local.sOrderNo.Set(v.Passed.009001.string)
+f.Intrinsic.String.LPad(v.Local.sOrderNo,"0",7,v.Local.sOrderNo)
+F.Intrinsic.String.Build("SELECT * FROM CFDI_COMEXT_OE_SO WHERE ORDER_NO = '{0}'",v.Local.sOrderNo,V.Local.sSQL)
+F.ODBC.Connection!CONX.OpenLocalRecordsetRW("RSTSO",v.Local.sSQL)
+
+'Save Sales Order data from form info into custom table CFDI_COMEXT_OE_SO 
+F.Intrinsic.Control.If(v.ODBC.CONX!RSTSO.EOF,=,True)
+	F.ODBC.CONX!RSTSO.AddNew
+	F.ODBC.Conx!RSTSO.Set!ORDER_NO(v.Local.sOrderNo)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(V.Screen.F_ComExt_SalesOrder!txtClavePedimento.Text,=,"A1")
+	F.ODBC.CONX!RSTSO.Set!MOTIVO_TRASLADO(V.Screen.F_ComExt_SalesOrder!txtMotivoTraslado.Text)
+	F.ODBC.CONX!RSTSO.Set!TIPO_OPERACION(V.Screen.F_ComExt_SalesOrder!txtTipoOperacion.Text)
+	F.ODBC.CONX!RSTSO.Set!CLAVE_PEDIMENTO(V.Screen.F_ComExt_SalesOrder!txtClavePedimento.Text)
+	F.ODBC.CONX!RSTSO.Set!CERTDEORIGEN(V.Screen.F_ComExt_SalesOrder!txtCertificadoOrigen.Text)
+	F.ODBC.CONX!RSTSO.Set!NO_CERTDEORIGEN(V.Screen.F_ComExt_SalesOrder!txtNoCertificadoOrigen.Text)
+	F.ODBC.CONX!RSTSO.Set!INCOTERM(V.Screen.F_ComExt_SalesOrder!txtINCOTERM.Text)
+	F.ODBC.CONX!RSTSO.Set!NO_EXP_CON_UN_EU(V.Screen.F_ComExt_SalesOrder!txtNoExConUnEu.Text)
+	F.ODBC.CONX!RSTSO.Set!SUBDIVISION(V.Screen.F_ComExt_SalesOrder!txtSubdivision.Text)
+	F.ODBC.CONX!RSTSO.Set!OBSERVACIONES(V.Screen.F_ComExt_SalesOrder!txtObervaciones.Text)
+	F.ODBC.CONX!RSTSO.Set!P_TAX_ID(V.Screen.F_ComExt_SalesOrder!txtPTaxID.Text)
+	F.ODBC.CONX!RSTSO.Set!P_RES_FISCAL(V.Screen.F_ComExt_SalesOrder!txtPResFiscal.Text)
+	F.ODBC.CONX!RSTSO.Set!VAL_UNIT_ADUANA(V.Screen.F_ComExt_SalesOrder!txtVUnitAduana.Text)
+	F.ODBC.CONX!RSTSO.Set!CANTIDAD_ADUANA(V.Screen.F_ComExt_SalesOrder!txtCantidadAduana.Text)
+	F.ODBC.Conx!RSTSO.Update
+	F.Intrinsic.UI.Msgbox("DATOS GUARDADOS")
+	F.ODBC.Conx!RSTSO.Close
+f.Intrinsic.Control.Else
+	F.Intrinsic.UI.Msgbox("Complemento Exterior Unicamente Requerido para Clave 'A1' Pedimento IMPORTACION O EXPORTACION DEFINITIVA. CERRAR PANTALLA O SELECCIONAR OTRA OPCION")
+	F.ODBC.Conx!RSTSO.Close
+	f.Intrinsic.Control.ExitSub
+	'F.Intrinsic.Control.CallSub(F_ComExt_SalesOrder_UnLoad)
+f.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdSaveSO_SavetoDB.End
+
+Program.Sub.cmdSaveSO_Click.Start
+'Text boxes ClaveDePedimento, CertificadoOrigen, Incoterm, Subdivision are required otherwise stop the process, else save to DB.
+f.Intrinsic.Control.If(v.Screen.F_ComExt_SalesOrder!txtTipoOperacion.Text,=,"2")
+	f.Intrinsic.Control.If(V.Screen.F_ComExt_SalesOrder!txtClavePedimento.Text,=,"")
+		f.Intrinsic.UI.Msgbox("El campo Clave De Pedimento es requerido para TIPO OPERACION '2'")
+	f.Intrinsic.Control.ElseIf(V.Screen.F_ComExt_SalesOrder!txtCertificadoOrigen.Text,=,"")
+		f.Intrinsic.UI.Msgbox("El campo Certificado Origen es requerido para TIPO OPERACION '2'")
+
+	f.Intrinsic.Control.ElseIf(V.Screen.F_ComExt_SalesOrder!txtINCOTERM.Text,=,"")
+		f.Intrinsic.UI.Msgbox("El campo INCOTERM es requerido para TIPO OPERACION '2'")
+
+	f.Intrinsic.Control.ElseIf(V.Screen.F_ComExt_SalesOrder!txtSubdivision.Text,=,"")
+		f.Intrinsic.UI.Msgbox("El campo Subdivision es requerido para TIPO OPERACION '2'")
+
+	f.Intrinsic.Control.ElseIf(v.Screen.F_ComExt_SalesOrder!txtTipoOperacion.Text,=,"A")
+		f.Intrinsic.UI.Msgbox("El campo Tipo Operacion es requerido para TIPO OPERACION '2'")
+	f.Intrinsic.Control.ExitSub
+	f.Intrinsic.Control.Else
+		F.Intrinsic.Control.CallSub(cmdSaveSO_SavetoDB)	
+	f.Intrinsic.Control.EndIf
+f.Intrinsic.Control.Else
+	F.Intrinsic.Control.CallSub(cmdSaveSO_SavetoDB)	
+f.Intrinsic.Control.EndIf
+
+Program.Sub.cmdSaveSO_Click.End
+
+Program.Sub.cmdClear_Click.Start
+V.Local.sSQL.Declare
+v.Local.sOrderNo.Declare
+
+
+v.Local.sOrderNo.Set(v.Passed.009001.string)
+
+'DELETE SQL TABLES 
+F.Intrinsic.String.Build("delete FROM CFDI_COMEXT_OE_SO WHERE ORDER_NO = '{0}'",V.Local.sOrderNo,v.Local.sSQL)
+F.ODBC.Connection!conx.Execute(v.Local.sSQL)
+
+GUI.F_ComExt_SalesOrder.txtTipoOperacion.Text("")
+GUI.F_ComExt_SalesOrder.txtClavePedimento.Text("")
+GUI.F_ComExt_SalesOrder.txtCertificadoOrigen.Text("")
+GUI.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Text("")
+GUI.F_ComExt_SalesOrder.txtINCOTERM.Text("")
+GUI.F_ComExt_SalesOrder.txtSubdivision.Text("")
+GUI.F_ComExt_SalesOrder.txtObervaciones.Text("")
+'GUI.F_ComExt_SalesOrder.txtCantidadAduana.Text("")
+'GUI.F_ComExt_SalesOrder.txtMotivoTraslado.Text("")
+'GUI.F_ComExt_SalesOrder.txtNoExConUnEu.Text("")
+'GUI.F_ComExt_SalesOrder.txtPResFiscal.Text("")
+'GUI.F_ComExt_SalesOrder.txtPTaxID.Text("")
+'GUI.F_ComExt_SalesOrder.txtVUnitAduana.Text("")
+GUI.F_ComExt_SalesOrder.txtTipoOperacion.Visible(True)
+GUI.F_ComExt_SalesOrder.txtClavePedimento.Visible(True)
+GUI.F_ComExt_SalesOrder.txtCertificadoOrigen.Visible(True)
+GUI.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Visible(True)
+GUI.F_ComExt_SalesOrder.txtINCOTERM.Visible(True)
+GUI.F_ComExt_SalesOrder.txtSubdivision.Visible(True)
+GUI.F_ComExt_SalesOrder.txtObervaciones.Visible(True)
+'GUI.F_ComExt_SalesOrder.txtCantidadAduana.Visible(True)
+'GUI.F_ComExt_SalesOrder.txtMotivoTraslado.Visible(True)
+'GUI.F_ComExt_SalesOrder.txtNoExConUnEu.Visible(True)
+'GUI.F_ComExt_SalesOrder.txtPResFiscal.Visible(True)
+'GUI.F_ComExt_SalesOrder.txtPTaxID.Visible(True)
+'GUI.F_ComExt_SalesOrder.txtVUnitAduana.Visible(True)
+
+f.Intrinsic.UI.Msgbox("INFROMACION BORRADA")
+
+Program.Sub.cmdClear_Click.End
+
+Program.Sub.cmdMotivoTraslado_Click.Start
+v.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+v.Local.sTemp.Declare(string)
+v.Local.sTitles.Declare(string)
+v.Local.iWidths.Declare(long)
+
+'Load Custom Browser from Custom Table CFDI_C_MOTIVTRASLADO Into Form
+F.Intrinsic.String.Split("MOTIVO_TRALSADO*!*DESCRIPCION","*!*",v.local.sTitles)
+F.Intrinsic.String.Split("100*!*800","*!*",v.local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE CODIGO MOTIVO TRASLADO DESDE EL CATALAGO DEL SAT","conx","select * from CFDI_C_MOTIVTRASLADO",v.Local.sTitles,v.Local.iWidths,v.Local.sRet)
+F.Intrinsic.Control.If(v.Local.sRet,"=","***CANCEL***")
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+	Gui.F_ComExt_SalesOrder.txtMotivoTraslado.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.EndIf
+
+
+
+Program.Sub.cmdMotivoTraslado_Click.End
+
+Program.Sub.cmdClavePedimento_Click.Start
+v.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+v.Local.sTemp.Declare(string)
+v.Local.sTitles.Declare(string)
+v.Local.iWidths.Declare(long)
+
+'Load Custom Browser from Custom Table CFDI_C_CLAVEPEDIMEN Into Form
+F.Intrinsic.String.Split("CLAVE_PEDIMENTO*!*DESCRIPCION","*!*",v.local.sTitles)
+F.Intrinsic.String.Split("100*!*800","*!*",v.local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE CLAVE_PEDIMENTO DESDE EL CATALAGO DEL SAT","conx","select * from CFDI_C_CLAVEPEDIMEN",v.Local.sTitles,v.Local.iWidths,v.Local.sRet)
+F.Intrinsic.Control.If(v.Local.sRet,"=","***CANCEL***")
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+	Gui.F_ComExt_SalesOrder.txtClavePedimento.Text(V.Local.sRet(0).Trim)	
+F.Intrinsic.Control.EndIf
+Program.Sub.cmdClavePedimento_Click.End
+
+Program.Sub.cmdCertificadoOrigen_Click.Start
+v.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+v.Local.sTemp.Declare(string)
+v.Local.sTitles.Declare(string)
+v.Local.iWidths.Declare(long)
+
+'Load Custom Browser from Custom Table CFDI_C_CERTDEORIGEN Into Form
+F.Intrinsic.String.Split("CLAVE*!*DESCRIPCION","*!*",v.local.sTitles)
+F.Intrinsic.String.Split("100*!*800","*!*",v.local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE CLAVE CERT. ORIGEN DESDE CATALAGO DEL SAT","conx","select * from CFDI_C_CERTDEORIGEN",v.Local.sTitles,v.Local.iWidths,v.Local.sRet)
+F.Intrinsic.Control.If(v.Local.sRet,"=","***CANCEL***")
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+	Gui.F_ComExt_SalesOrder.txtCertificadoOrigen.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.EndIf
+
+'Valitation If txtCertificadoOrigen = 0 then block txtNoCertificadoOrigen2
+f.Intrinsic.Control.If(v.Screen.F_ComExt_SalesOrder!txtCertificadoOrigen.Text,<>,"0")
+	gui.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Visible(True)
+f.Intrinsic.Control.Else
+	gui.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Visible(False)
+f.Intrinsic.Control.EndIf
+
+Program.Sub.cmdCertificadoOrigen_Click.End
+
+Program.Sub.cmdINCOTERM_Click.Start
+v.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+v.Local.sTemp.Declare(string)
+v.Local.sTitles.Declare(string)
+v.Local.iWidths.Declare(long)
+
+'Load Custom Browser from Custom Table CFDI_C_INCOTERM Into Form
+F.Intrinsic.String.Split("INCOTERM*!*DESCRIPCION","*!*",v.local.sTitles)
+F.Intrinsic.String.Split("100*!*800","*!*",v.local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE CLAVE INCOTERM DESDE CATALAGO DEL SAT","conx","select * from CFDI_C_INCOTERM",v.Local.sTitles,v.Local.iWidths,v.Local.sRet)
+F.Intrinsic.Control.If(v.Local.sRet,"=","***CANCEL***")
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+	Gui.F_ComExt_SalesOrder.txtINCOTERM.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.EndIf
+Program.Sub.cmdINCOTERM_Click.End
+
+Program.Sub.cmdTipoOperacion_Click.Start
+v.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+v.Local.sTemp.Declare(string)
+v.Local.sTitles.Declare(string)
+v.Local.iWidths.Declare(long)
+
+'Load Custom Browser from Custom Table CFDI_C_TIPOOPERACION Into Form
+F.Intrinsic.String.Split("TIPO_OPERACION*!*DESCRIPCION","*!*",v.local.sTitles)
+F.Intrinsic.String.Split("100*!*800","*!*",v.local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE TIPO_OPERACION DESDE CATALAGO DEL SAT","conx","select * from CFDI_C_TIPOOPERACION",v.Local.sTitles,v.Local.iWidths,v.Local.sRet)
+F.Intrinsic.Control.If(v.Local.sRet,"=","***CANCEL***")
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+	Gui.F_ComExt_SalesOrder.txtTipoOperacion.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(v.Screen.F_ComExt_SalesOrder!txtTipoOperacion.Text,=,"A")
+	'bloquear: MotivoTraslado, ClaveDePedimento, CertificadoOrigen, NumCertificadoOrigen, NumExportadorConfiable, Incoterm, Subdivision
+	
+	gui.F_ComExt_SalesOrder.txtClavePedimento.Visible(False)
+	gui.F_ComExt_SalesOrder.cmdClavePedimento.Visible(False)
+	gui.F_ComExt_SalesOrder.txtCertificadoOrigen.Visible(False)
+	gui.F_ComExt_SalesOrder.cmdCertificadoOrigen.Visible(False)
+	gui.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Visible(False)
+	gui.F_ComExt_SalesOrder.txtINCOTERM.Visible(False)
+	gui.F_ComExt_SalesOrder.cmdINCOTERM.Visible(False)
+	gui.F_ComExt_SalesOrder.txtSubdivision.Visible(False)
+	gui.F_ComExt_SalesOrder.cmdSubdivision.Visible(False)
+	gui.F_ComExt_SalesOrder.txtObervaciones.Visible(False)
+	gui.F_ComExt_SalesOrder.txtObervaciones.Visible(False)
+
+'SET VALUES TO 0
+	gui.F_ComExt_SalesOrder.txtClavePedimento.Text("")
+	gui.F_ComExt_SalesOrder.cmdClavePedimento.Text("")
+	gui.F_ComExt_SalesOrder.txtCertificadoOrigen.Text("")
+	gui.F_ComExt_SalesOrder.cmdCertificadoOrigen.Text("")
+	gui.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Text("")
+	gui.F_ComExt_SalesOrder.txtINCOTERM.Text("")
+	gui.F_ComExt_SalesOrder.cmdINCOTERM.Text("")
+	gui.F_ComExt_SalesOrder.txtSubdivision.Text("")
+	gui.F_ComExt_SalesOrder.cmdSubdivision.Text("")
+	gui.F_ComExt_SalesOrder.txtObervaciones.Text("")
+	gui.F_ComExt_SalesOrder.txtObervaciones.Text("")
+
+f.Intrinsic.Control.Else
+	gui.F_ComExt_SalesOrder.txtClavePedimento.Visible(True)
+	gui.F_ComExt_SalesOrder.cmdClavePedimento.Visible(True)
+	gui.F_ComExt_SalesOrder.txtCertificadoOrigen.Visible(True)
+	gui.F_ComExt_SalesOrder.cmdCertificadoOrigen.Visible(True)
+	gui.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Visible(True)
+	gui.F_ComExt_SalesOrder.txtINCOTERM.Visible(True)
+	gui.F_ComExt_SalesOrder.cmdINCOTERM.Visible(True)
+	gui.F_ComExt_SalesOrder.txtSubdivision.Visible(True)
+	gui.F_ComExt_SalesOrder.cmdSubdivision.Visible(True)
+	gui.F_ComExt_SalesOrder.txtObervaciones.Visible(True)
+	gui.F_ComExt_SalesOrder.txtObervaciones.Visible(True)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(v.Screen.F_ComExt_SalesOrder!txtTipoOperacion.Text,=,"2")
+	gui.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Visible(False)	
+	gui.F_ComExt_SalesOrder.txtObervaciones.Visible(False)
+	gui.F_ComExt_SalesOrder.txtObervaciones.Visible(False)
+'set values to 0
+	gui.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Text("")	
+	gui.F_ComExt_SalesOrder.txtObervaciones.Text("")
+	gui.F_ComExt_SalesOrder.txtObervaciones.Text("")	
+f.Intrinsic.Control.Else
+	gui.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Visible(True)	
+	gui.F_ComExt_SalesOrder.txtObervaciones.Visible(True)
+	gui.F_ComExt_SalesOrder.txtObervaciones.Visible(True)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(v.Screen.F_ComExt_SalesOrder!txtTipoOperacion.Text,=,"")
+	gui.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Visible(True)	
+	gui.F_ComExt_SalesOrder.txtObervaciones.Visible(True)
+	gui.F_ComExt_SalesOrder.txtObervaciones.Visible(True)
+'set values to 0
+	gui.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Text("")	
+	gui.F_ComExt_SalesOrder.txtObervaciones.Text("")
+	gui.F_ComExt_SalesOrder.txtObervaciones.Text("")	
+f.Intrinsic.Control.Else
+	gui.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Visible(False)	
+	gui.F_ComExt_SalesOrder.txtObervaciones.Visible(False)
+	gui.F_ComExt_SalesOrder.txtObervaciones.Visible(False)
+f.Intrinsic.Control.EndIf
+Program.Sub.cmdTipoOperacion_Click.End
+
+Program.Sub.cmdSubdivision_Click.Start
+v.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+v.Local.sTemp.Declare(string)
+v.Local.sTitles.Declare(string)
+v.Local.iWidths.Declare(long)
+
+'Load Custom Browser from Custom Table CFDI_C_SUBDIVISION Into Form
+F.Intrinsic.String.Split("CLAVE*!*DESCRIPCION","*!*",v.local.sTitles)
+F.Intrinsic.String.Split("100*!*800","*!*",v.local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE CLAVE SUBDIVISION DESDE CATALAGO DEL SAT","conx","select * from CFDI_C_SUBDIVISION",v.Local.sTitles,v.Local.iWidths,v.Local.sRet)
+F.Intrinsic.Control.If(v.Local.sRet,"=","***CANCEL***")
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+	Gui.F_ComExt_SalesOrder.txtSubdivision.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.EndIf
+Program.Sub.cmdSubdivision_Click.End
+
+Program.Sub.cmdPResFiscal_Click.Start
+v.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+v.Local.sTemp.Declare(string)
+v.Local.sTitles.Declare(string)
+v.Local.iWidths.Declare(long)
+
+'Load Custom Browser from Custom Table CFDI_C_PAIS Into Form
+F.Intrinsic.String.Split("CODIGO_PAIS*!*DESCRIPCION","*!*",v.local.sTitles)
+F.Intrinsic.String.Split("100*!*800","*!*",v.local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE CODIGO_PAIS DESDE EL CATALAGO DEL SAT","conx","select * from CFDI_C_PAIS",v.Local.sTitles,v.Local.iWidths,v.Local.sRet)
+F.Intrinsic.Control.If(v.Local.sRet,"=","***CANCEL***")
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+	Gui.F_ComExt_SalesOrder.txtPResFiscal.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.EndIf
+Program.Sub.cmdPResFiscal_Click.End
+
+Program.Sub.F_ComExt_SalesOrder_Load.Start
+V.Local.sSQL.Declare(String)
+v.local.sOrderNo.Declare
+
+'Load Existing Data into Form searching from custom table CFDI_COMEXT_OE_SO
+v.Local.sOrderNo.Set(v.Passed.009001.String)
+f.Intrinsic.String.LPad(v.Local.sOrderNo,"0",7,v.Local.sOrderNo)
+F.Intrinsic.String.Concat("select * from CFDI_COMEXT_OE_SO WHERE ORDER_NO ='",v.local.sOrderNo,"'",V.Local.sSql)
+F.ODBC.Connection!conx.OpenRecordsetRO("rstSOLoad",V.Local.sSql)
+F.Intrinsic.Control.If(V.ODBC.conx!rstSOLoad.EOF,=,"False")
+	F.Intrinsic.Control.If(V.ODBC.conx!rstSOLoad.FieldValTrim!ORDER_NO,=,"0")
+	Gui.F_ComExt_SalesOrder.txtMotivoTraslado.Value(1)
+	Gui.F_ComExt_SalesOrder.txtTipoOperacion.Value(2)
+	Gui.F_ComExt_SalesOrder.txtClavePedimento.Value(3)
+	Gui.F_ComExt_SalesOrder.txtCertificadoOrigen.Value(4)
+	gui.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Value(5)
+	Gui.F_ComExt_SalesOrder.txtINCOTERM.Value(6)
+	Gui.F_ComExt_SalesOrder.txtNoExConUnEu.Value(7)
+	Gui.F_ComExt_SalesOrder.txtSubdivision.Value(8)
+	Gui.F_ComExt_SalesOrder.txtObervaciones.Value(9)
+	Gui.F_ComExt_SalesOrder.txtPTaxID.Value(10)
+	Gui.F_ComExt_SalesOrder.txtPResFiscal.Value(11)
+	Gui.F_ComExt_SalesOrder.txtVUnitAduana.Value(12)
+	Gui.F_ComExt_SalesOrder.txtCantidadAduana.Value(13)
+	F.Intrinsic.Control.Endif
+	Gui.F_ComExt_SalesOrder.txtMotivoTraslado.Text(V.ODBC.conx!rstSOLoad.FieldValTrim!MOTIVO_TRASLADO)
+	Gui.F_ComExt_SalesOrder.txtTipoOperacion.Text(V.ODBC.conx!rstSOLoad.FieldValTrim!TIPO_OPERACION)
+	Gui.F_ComExt_SalesOrder.txtClavePedimento.Text(V.ODBC.conx!rstSOLoad.FieldValTrim!CLAVE_PEDIMENTO)
+	Gui.F_ComExt_SalesOrder.txtCertificadoOrigen.Text(V.ODBC.conx!rstSOLoad.FieldValTrim!CERTDEORIGEN)
+	gui.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Text(V.ODBC.conx!rstSOLoad.FieldValTrim!NO_CERTDEORIGEN)
+	Gui.F_ComExt_SalesOrder.txtINCOTERM.Text(V.ODBC.conx!rstSOLoad.FieldValTrim!INCOTERM)
+	Gui.F_ComExt_SalesOrder.txtNoExConUnEu.Text(V.ODBC.conx!rstSOLoad.FieldValTrim!NO_EXP_CON_UN_EU)
+	Gui.F_ComExt_SalesOrder.txtSubdivision.Text(V.ODBC.conx!rstSOLoad.FieldValTrim!SUBDIVISION)
+	Gui.F_ComExt_SalesOrder.txtObervaciones.Text(V.ODBC.conx!rstSOLoad.FieldValTrim!OBSERVACIONES)
+	Gui.F_ComExt_SalesOrder.txtPTaxID.Text(V.ODBC.conx!rstSOLoad.FieldValTrim!P_TAX_ID)
+	Gui.F_ComExt_SalesOrder.txtPResFiscal.Text(V.ODBC.conx!rstSOLoad.FieldValTrim!P_RES_FISCAL)
+	Gui.F_ComExt_SalesOrder.txtVUnitAduana.Text(V.ODBC.conx!rstSOLoad.FieldValTrim!VAL_UNIT_ADUANA)
+	Gui.F_ComExt_SalesOrder.txtCantidadAduana.Text(V.ODBC.conx!rstSOLoad.FieldValTrim!CANTIDAD_ADUANA)
+F.Intrinsic.Control.EndIf
+
+Program.Sub.F_ComExt_SalesOrder_Load.End
+
+Program.Sub.F_ComExt_OpenSalesOrder_Load.Start
+V.Local.sSQL.Declare(String)
+v.local.sOrderNo.Declare
+
+
+'f.Intrinsic.UI.Msgbox(v.Passed.009001,"ORDER NUMBER")
+'Load Existing Data into Form searching from custom table CFDI_COMEXT_OE_SO
+v.Local.sOrderNo.Set(v.Passed.009001.String)
+f.Intrinsic.String.LPad(v.Local.sOrderNo,"0",7,v.Local.sOrderNo)
+F.Intrinsic.String.Concat("select * from CFDI_COMEXT_OE_SO WHERE ORDER_NO ='",v.local.sOrderNo,"'",V.Local.sSql)
+F.ODBC.Connection!conx.OpenRecordsetRO("rstLoad",V.Local.sSql)
+F.Intrinsic.Control.If(V.ODBC.conx!rstLoad.EOF,=,"False")
+	F.Intrinsic.Control.If(V.ODBC.conx!rstLoad.FieldValTrim!ORDER_NO,=,"0")
+	Gui.F_ComExt_SalesOrder.txtMotivoTraslado.Value(1)
+	Gui.F_ComExt_SalesOrder.txtTipoOperacion.Value(2)
+	Gui.F_ComExt_SalesOrder.txtClavePedimento.Value(3)
+	Gui.F_ComExt_SalesOrder.txtCertificadoOrigen.Value(4)
+	gui.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Value(5)
+	Gui.F_ComExt_SalesOrder.txtINCOTERM.Value(6)
+	Gui.F_ComExt_SalesOrder.txtNoExConUnEu.Value(7)
+	Gui.F_ComExt_SalesOrder.txtSubdivision.Value(8)
+	Gui.F_ComExt_SalesOrder.txtObervaciones.Value(9)
+	Gui.F_ComExt_SalesOrder.txtPTaxID.Value(10)
+	Gui.F_ComExt_SalesOrder.txtPResFiscal.Value(11)
+	Gui.F_ComExt_SalesOrder.txtVUnitAduana.Value(12)
+	Gui.F_ComExt_SalesOrder.txtCantidadAduana.Value(13)
+	F.Intrinsic.Control.Endif
+	Gui.F_ComExt_SalesOrder.txtMotivoTraslado.Text(V.ODBC.conx!rstLoad.FieldValTrim!MOTIVO_TRASLADO)
+	Gui.F_ComExt_SalesOrder.txtTipoOperacion.Text(V.ODBC.conx!rstLoad.FieldValTrim!TIPO_OPERACION)
+	Gui.F_ComExt_SalesOrder.txtClavePedimento.Text(V.ODBC.conx!rstLoad.FieldValTrim!CLAVE_PEDIMENTO)
+	Gui.F_ComExt_SalesOrder.txtCertificadoOrigen.Text(V.ODBC.conx!rstLoad.FieldValTrim!CERTDEORIGEN)
+	gui.F_ComExt_SalesOrder.txtNoCertificadoOrigen.Text(V.ODBC.conx!rstLoad.FieldValTrim!NO_CERTDEORIGEN)
+	Gui.F_ComExt_SalesOrder.txtINCOTERM.Text(V.ODBC.conx!rstLoad.FieldValTrim!INCOTERM)
+	Gui.F_ComExt_SalesOrder.txtNoExConUnEu.Text(V.ODBC.conx!rstLoad.FieldValTrim!NO_EXP_CON_UN_EU)
+	Gui.F_ComExt_SalesOrder.txtSubdivision.Text(V.ODBC.conx!rstLoad.FieldValTrim!SUBDIVISION)
+	Gui.F_ComExt_SalesOrder.txtObervaciones.Text(V.ODBC.conx!rstLoad.FieldValTrim!OBSERVACIONES)
+	Gui.F_ComExt_SalesOrder.txtPTaxID.Text(V.ODBC.conx!rstLoad.FieldValTrim!P_TAX_ID)
+	Gui.F_ComExt_SalesOrder.txtPResFiscal.Text(V.ODBC.conx!rstLoad.FieldValTrim!P_RES_FISCAL)
+	Gui.F_ComExt_SalesOrder.txtVUnitAduana.Text(V.ODBC.conx!rstLoad.FieldValTrim!VAL_UNIT_ADUANA)
+	Gui.F_ComExt_SalesOrder.txtCantidadAduana.Text(V.ODBC.conx!rstLoad.FieldValTrim!CANTIDAD_ADUANA)
+F.Intrinsic.Control.EndIf
+Program.Sub.F_ComExt_OpenSalesOrder_Load.End
+
+''''''''''''COMPANY INFO'''''''''''
+Program.Sub.cmdCompany_Click.Start
+V.Global.sCompany.Declare(String)
+V.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+V.Local.sTitles.Declare(string)
+V.Local.iWidths.Declare(long)
+
+'Load Custom Browser from View V_COMPANY Into Form
+F.Intrinsic.String.Split("NAME_COMPANY*!*COUNTRY","*!*",V.Local.sTitles)
+F.Intrinsic.String.Split("500*!*500","*!*",V.Local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE NAME_COMPANY","CONX","select NAME_COMPANY, COUNTRY from V_COMPANY",V.Local.sTitles,V.Local.iWidths,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,"=","***CANCEL***")
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.f_ComExt_Company.txtEmpresa.Text(V.Local.sRet(0).Trim)
+	v.Global.sCompany.Set(V.Local.sRet(0).Trim)
+	
+	'Load Existing Data into Form from data taken from V_COMPANY Browser
+	F.Intrinsic.String.Concat("select * from CFDI_COMEXTCOMPANY WHERE NAME_COMPANY ='",V.Global.sCompany,"'",V.Local.sSql)
+	F.ODBC.Connection!CONX.OpenRecordsetRO("rstLoad",V.Local.sSql)
+	F.Intrinsic.Control.If(V.ODBC.CONX!rstLoad.EOF,=,"False")
+		F.Intrinsic.Control.If(V.ODBC.CONX!rstLoad.FieldValTrim!NAME_COMPANY,=,"0")
+		Gui.f_ComExt_Company.txtRFC.Value(1)
+		Gui.f_ComExt_Company.txtCalle.Value(2)
+		Gui.f_ComExt_Company.txtNumExt.Value(3)
+		Gui.f_ComExt_Company.txtNumInt.Value(4)
+		Gui.f_ComExt_Company.txtCP.Value(5)
+		Gui.f_ComExt_Company.txtColonia.Value(6)
+		Gui.f_ComExt_Company.txtLocalidad.Value(7)
+		Gui.f_ComExt_Company.txtMunicipio.Value(8)
+		Gui.f_ComExt_Company.txtEstado.Value(9)
+		Gui.f_ComExt_Company.txtPais.Value(10)
+		Gui.f_ComExt_Company.txtNumExtConUE.Value(11)
+'		Gui.f_ComExt_Company.txtNumActPrep.Value(12)
+'		Gui.f_ComExt_Company.txtNumMaq.Value(13)
+'		Gui.f_ComExt_Company.txtNumPITEX.Value(14)
+'		Gui.f_ComExt_Company.txtNumECEX.Value(15)
+'		Gui.f_ComExt_Company.txtNumPPSEC.Value(16)
+		F.Intrinsic.Control.Endif
+		Gui.f_ComExt_Company.txtRFC.Text(V.ODBC.CONX!rstLoad.FieldValTrim!RFC)
+		Gui.f_ComExt_Company.txtCalle.Text(V.ODBC.CONX!rstLoad.FieldValTrim!CALLE)
+		Gui.f_ComExt_Company.txtNumExt.Text(V.ODBC.CONX!rstLoad.FieldValTrim!NUM_EXTERIOR)
+		Gui.f_ComExt_Company.txtNumInt.Text(V.ODBC.CONX!rstLoad.FieldValTrim!NUM_INTERIOR)
+		Gui.f_ComExt_Company.txtCP.Text(V.ODBC.CONX!rstLoad.FieldValTrim!CODIGO_POSTAL)
+		Gui.f_ComExt_Company.txtColonia.Text(V.ODBC.CONX!rstLoad.FieldValTrim!COLONIA)
+		Gui.f_ComExt_Company.txtLocalidad.Text(V.ODBC.CONX!rstLoad.FieldValTrim!LOCALIDAD)
+		Gui.f_ComExt_Company.txtMunicipio.Text(V.ODBC.CONX!rstLoad.FieldValTrim!MUNICIPIO)
+		Gui.f_ComExt_Company.txtEstado.Text(V.ODBC.CONX!rstLoad.FieldValTrim!ESTADO)
+		Gui.f_ComExt_Company.txtPais.Text(V.ODBC.CONX!rstLoad.FieldValTrim!PAIS)
+		Gui.f_ComExt_Company.txtNumExtConUE.Text(V.ODBC.CONX!rstLoad.FieldValTrim!NUM_EXT_CONF_UN_EU)
+'		Gui.f_ComExt_Company.txtNumActPrep.Text(V.ODBC.CONX!rstLoad.FieldValTrim!ACTPREPONDERANTE)
+'		Gui.f_ComExt_Company.txtNumMaq.Text(V.ODBC.CONX!rstLoad.FieldValTrim!NUM_MAQUILADORA)
+'		Gui.f_ComExt_Company.txtNumPITEX.Text(V.ODBC.CONX!rstLoad.FieldValTrim!NUM_PITEX)
+'		Gui.f_ComExt_Company.txtNumECEX.Text(V.ODBC.CONX!rstLoad.FieldValTrim!NUM_ECEX)
+'		Gui.f_ComExt_Company.txtNumPPSEC.Text(V.ODBC.CONX!rstLoad.FieldValTrim!NUM_PPSEC)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.String.Build("select * from V_COMPANY where NAME_COMPANY = '{0}'",V.Global.sCompany.Trim,V.Local.sSQL)
+	F.ODBC.Connection!CONX.OpenLocalRecordSetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.CONX!rst.EOF,=,True)
+		F.Intrinsic.String.Build("INSERT INTO CFDI_COMEXTCOMPANY(NAME_COMPANY) VALUES ('{0}');",V.Local.sRet(0).Trim,V.Local.sSQL)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Build("UPDATE CFDI_COMEXTCOMPANY set NAME_COMPANY ='{0}'",V.Local.sRet(0).Trim,V.Local.sSQL)
+	F.Intrinsic.Control.EndIf	
+	F.ODBC.Connection!CONX.Execute(V.Local.sSQL)
+	F.ODBC.CONX!rst.Close
+F.Intrinsic.Control.EndIf
+
+Program.Sub.cmdCompany_Click.End
+
+Program.Sub.cmdSaveCompany_Click.Start
+V.Local.sSQL.Declare(String)
+
+'validations that texts are not empty
+f.Intrinsic.Control.If(v.Screen.f_ComExt_Company!txtRFC.Text,=,"")
+	F.Intrinsic.UI.Msgbox("RFC incorrecto, debe tener al menos 12(personas morales) o 13(personas fisicas) caracteres, reingresa el RFC y dar clic en guardar de nuevo")
+gui.f_ComExt_Company..ControlBox(False)
+
+
+f.Intrinsic.ControL.ElseIf(v.Screen.f_ComExt_Company!txtCalle.Text,=,"")
+	f.Intrinsic.UI.Msgbox("Nombre de Calle no ingresada, favor de ingresar el nombre de la calle")
+	gui.f_ComExt_Company..ControlBox(False)
+
+
+f.Intrinsic.Control.ElseIf(v.Screen.f_ComExt_Company!txtNumExt.Text,=,"")
+	f.Intrinsic.UI.Msgbox("Numero Exterior no ingresado, favor de ingresar el Numero Exterior")
+	gui.f_ComExt_Company..ControlBox(False)
+
+
+f.Intrinsic.Control.ElseIf(v.Screen.f_ComExt_Company!txtCP.Text,=,"")
+	f.Intrinsic.UI.Msgbox("Codigo Postal no seleccionado, favor de ingresar el Codigo Postal")
+	gui.f_ComExt_Company..ControlBox(False)
+
+
+f.Intrinsic.Control.ElseIf(v.Screen.f_ComExt_Company!txtColonia.Text,=,"")
+	f.Intrinsic.UI.Msgbox("Colonia no seleccionada, favor de ingresar la Colonia")
+	gui.f_ComExt_Company..ControlBox(False)
+
+
+f.Intrinsic.Control.ElseIf(v.Screen.f_ComExt_Company!txtLocalidad.Text,=,"")
+	f.Intrinsic.UI.Msgbox("Localidad no seleccionada, favor de ingresar la Localidad")
+	gui.f_ComExt_Company..ControlBox(False)
+
+
+f.Intrinsic.Control.ElseIf(v.Screen.f_ComExt_Company!txtMunicipio.Text,=,"")
+	f.Intrinsic.UI.Msgbox("Municipio no seleccionado, favor de ingresar el Municipio")
+	gui.f_ComExt_Company..ControlBox(False)
+
+
+f.Intrinsic.Control.ElseIf(v.Screen.f_ComExt_Company!txtEstado.Text,=,"")
+	f.Intrinsic.UI.Msgbox("Estado no seleccionado, favor de ingresar el Estado")
+	gui.f_ComExt_Company..ControlBox(False)
+
+
+f.Intrinsic.Control.ElseIf(v.Screen.f_ComExt_Company!txtPais.Text,=,"")
+	f.Intrinsic.UI.Msgbox("Pais no seleccionado, favor de ingresar el Pais")
+	gui.f_ComExt_Company..ControlBox(False)
+
+F.Intrinsic.Control.Else
+	gui.f_ComExt_Company..ControlBox(True)
+	'Save data from Form into Custom Table CFDI_COMEXTCOMPANY
+	F.Intrinsic.String.Build("SELECT * FROM CFDI_COMEXTCOMPANY where NAME_COMPANY = '{0}'",V.Global.sCompany,V.Local.sSQL)
+	F.ODBC.Connection!CONX.OpenLocalRecordsetRW("RST",V.Local.sSQL)
+	F.Intrinsic.Control.If(v.ODBC.CONX!RST.EOF,=,True)
+		F.ODBC.CONX!RST.AddNew
+		F.ODBC.CONX!RST.Set!NAME_COMPANY(V.Global.sCompany)
+	f.Intrinsic.Control.EndIf
+	F.ODBC.CONX!RST.Set!RFC(V.Screen.f_ComExt_Company!txtRFC.Text)
+	F.ODBC.CONX!RST.Set!CALLE(V.Screen.f_ComExt_Company!txtCalle.Text)
+	F.ODBC.CONX!RST.Set!NUM_EXTERIOR(V.Screen.f_ComExt_Company!txtNumExt.Text)
+	F.ODBC.CONX!RST.Set!NUM_INTERIOR(V.Screen.f_ComExt_Company!txtNumInt.Text)
+	F.ODBC.CONX!RST.Set!CODIGO_POSTAL(V.Screen.f_ComExt_Company!txtCP.Text)
+	F.ODBC.CONX!RST.Set!COLONIA(V.Screen.f_ComExt_Company!txtColonia.Text)
+	F.ODBC.CONX!RST.Set!LOCALIDAD(V.Screen.f_ComExt_Company!txtLocalidad.Text)
+	F.ODBC.CONX!RST.Set!MUNICIPIO(V.Screen.f_ComExt_Company!txtMunicipio.Text)
+	F.ODBC.CONX!RST.Set!ESTADO(V.Screen.f_ComExt_Company!txtEstado.Text)
+	F.ODBC.CONX!RST.Set!PAIS(V.Screen.f_ComExt_Company!txtPais.Text)
+	F.ODBC.CONX!RST.Set!NUM_EXT_CONF_UN_EU(V.Screen.f_ComExt_Company!txtNumExtConUE.Text)
+'	F.ODBC.CONX!RST.Set!ACTPREPONDERANTE(V.Screen.f_ComExt_Company!txtNumActPrep.Text)
+'	F.ODBC.CONX!RST.Set!NUM_MAQUILADORA(V.Screen.f_ComExt_Company!txtNumMaq.Text)
+'	F.ODBC.CONX!RST.Set!NUM_PITEX(V.Screen.f_ComExt_Company!txtNumPITEX.Text)
+'	F.ODBC.CONX!RST.Set!NUM_ECEX(V.Screen.f_ComExt_Company!txtNumECEX.Text)
+'	F.ODBC.CONX!RST.Set!NUM_PPSEC(V.Screen.f_ComExt_Company!txtNumPPSEC.Text)
+	F.ODBC.CONX!RST.Update
+	F.Intrinsic.UI.Msgbox("DATOS GUARDADOS")
+	F.ODBC.CONX!RST.Close
+	
+f.Intrinsic.Control.EndIf
+Program.Sub.cmdSaveCompany_Click.End
+
+Program.Sub.chkAnexo24_Click.Start
+	'f.Intrinsic.Control.If(v.Screen.F_Direccion!chkComplemento.CheckedAsBoolean,=,True)
+F.Intrinsic.Control.If(V.Screen.f_ComExt_Company!chkAnexo24.CheckedAsBoolean,=,True)
+	Gui.f_ComExt_Company.txtNumActPrep.Locked(False)
+	Gui.f_ComExt_Company.txtNumMaq.Locked(False)
+	Gui.f_ComExt_Company.txtNumPITEX.Locked(False)
+	Gui.f_ComExt_Company.txtNumECEX.Locked(False)
+	Gui.f_ComExt_Company.txtNumPPSEC.Locked(False)
+F.Intrinsic.Control.Else
+	Gui.f_ComExt_Company.txtNumActPrep.Locked(True)
+	Gui.f_ComExt_Company.txtNumMaq.Locked(True)
+	Gui.f_ComExt_Company.txtNumPITEX.Locked(True)
+	Gui.f_ComExt_Company.txtNumECEX.Locked(True)
+	Gui.f_ComExt_Company.txtNumPPSEC.Locked(True)
+F.Intrinsic.Control.EndIf
+
+Program.Sub.chkAnexo24_Click.End
+
+Program.Sub.Company_Change.Start
+F.Intrinsic.Control.If(v.Screen.f_ComExt_Company!txtCalle.Text,<>,"")
+	gui.f_ComExt_Company..ControlBox(True)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(v.Screen.f_ComExt_Company!txtRFC.Text,<>,"")
+	gui.f_ComExt_Company..ControlBox(True)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(v.Screen.f_ComExt_Company!txtNumExt.Text,<>,"")
+	gui.f_ComExt_Company..ControlBox(True)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(v.Screen.f_ComExt_Company!txtCP.Text,<>,"")
+	gui.f_ComExt_Company..ControlBox(True)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(v.Screen.f_ComExt_Company!txtColonia.Text,<>,"")
+	gui.f_ComExt_Company..ControlBox(True)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(v.Screen.f_ComExt_Company!txtLocalidad.Text,<>,"")
+	gui.f_ComExt_Company..ControlBox(True)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(v.Screen.f_ComExt_Company!txtMunicipio.Text,<>,"")
+	gui.f_ComExt_Company..ControlBox(True)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(v.Screen.f_ComExt_Company!txtEstado.Text,<>,"")
+	gui.f_ComExt_Company..ControlBox(True)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(v.Screen.f_ComExt_Company!txtPais.Text,<>,"")
+	gui.f_ComExt_Company..ControlBox(True)
+F.Intrinsic.Control.EndIf
+Program.Sub.Company_Change.End
+
+Program.Sub.cmdCP_Click.Start
+V.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+V.Local.sTitles.Declare(string)
+V.Local.iWidths.Declare(long)
+
+'Load Custom Browser from Custom Table CFDI_C_CODIGOPOSTAL Into Form
+F.Intrinsic.String.Split("CODIGO_POSTAL*!*ESTADO","*!*",V.Local.sTitles)
+F.Intrinsic.String.Split("200*!*500","*!*",V.Local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE CODIGO_POSTAL DESDE CATALAGO DEL SAT","CONX","select CODIGO_POSTAL, ESTADO from CFDI_C_CODIGOPOSTAL",V.Local.sTitles,V.Local.iWidths,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,"=","***CANCEL***")
+ F.Intrinsic.Control.Else
+ F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.f_ComExt_Company.txtCP.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.EndIf
+Program.Sub.cmdCP_Click.End
+
+Program.Sub.cmdColonia_Click.Start
+V.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+V.Local.sTitles.Declare(string)
+V.Local.iWidths.Declare(long)
+
+'Load Custom Browser from Custom Table CFDI_C_COLONIA Into Form
+F.Intrinsic.String.Split("COLONIA*!*CODIGO_POSTAL*!*NOMBRE_ASENTAMIENTO","*!*",V.Local.sTitles)
+F.Intrinsic.String.Split("200*!*500*!*500","*!*",V.Local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE COLONIA DESDE CATALAGO DEL SAT","CONX","select COLONIA, CODIGO_POSTAL, NOMBRE_ASENTAMIENTO from CFDI_C_COLONIA",V.Local.sTitles,V.Local.iWidths,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,"=","***CANCEL***")
+ F.Intrinsic.Control.Else
+ F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.f_ComExt_Company.txtColonia.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.EndIf
+Program.Sub.cmdColonia_Click.End
+
+Program.Sub.cmdLocalidad_Click.Start
+V.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+V.Local.sTitles.Declare(string)
+V.Local.iWidths.Declare(long)
+
+'Load Custom Browser from Custom Table CFDI_C_LOCALIDAD Into Form
+F.Intrinsic.String.Split("LOCALIDAD*!*ESTADO*!*DESCRIPCION","*!*",V.Local.sTitles)
+F.Intrinsic.String.Split("200*!*500*!*500","*!*",V.Local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE CODIGO LOCALIDAD DESDE CATALAGO DEL SAT","CONX","select LOCALIDAD, ESTADO, DESCRIPCION from CFDI_C_LOCALIDAD",V.Local.sTitles,V.Local.iWidths,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,"=","***CANCEL***")
+ F.Intrinsic.Control.Else
+ F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.f_ComExt_Company.txtLocalidad.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.EndIf
+Program.Sub.cmdLocalidad_Click.End
+
+Program.Sub.cmdMunicipo_Click.Start
+V.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+V.Local.sTitles.Declare(string)
+V.Local.iWidths.Declare(long)
+
+'Load Custom Browser from Custom Table CFDI_C_MUNICIPIO Into Form
+F.Intrinsic.String.Split("MUNICIPIO*!*ESTADO*!*DESCRIPCION","*!*",V.Local.sTitles)
+F.Intrinsic.String.Split("200*!*500*!*500","*!*",V.Local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE CODIGO MUNICIPIO DESDE CATALAGO DEL SAT","CONX","select MUNICIPIO, ESTADO, DESCRIPCION from CFDI_C_MUNICIPIO",V.Local.sTitles,V.Local.iWidths,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,"=","***CANCEL***")
+ F.Intrinsic.Control.Else
+ F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.f_ComExt_Company.txtMunicipio.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.EndIf
+Program.Sub.cmdMunicipo_Click.End
+
+Program.Sub.cmdEstado_Click.Start
+V.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+V.Local.sTitles.Declare(string)
+V.Local.iWidths.Declare(long)
+
+'Load Custom Browser from Custom Table CFDI_C_ESTADO Into Form
+F.Intrinsic.String.Split("ESTADO*!*PAIS*!*NOMBRE_ESTADO","*!*",V.Local.sTitles)
+F.Intrinsic.String.Split("200*!*500*!*500","*!*",V.Local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE CODIGO ESTADO DESDE CATALAGO DEL SAT","CONX","select ESTADO, PAIS, NOMBRE_ESTADO from CFDI_C_ESTADO",V.Local.sTitles,V.Local.iWidths,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,"=","***CANCEL***")
+ F.Intrinsic.Control.Else
+ F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.f_ComExt_Company.txtEstado.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.EndIf
+Program.Sub.cmdEstado_Click.End
+
+Program.Sub.cmdPais_Click.Start
+V.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+V.Local.sTitles.Declare(string)
+V.Local.iWidths.Declare(long)
+
+'Load Custom Browser from Custom Table CFDI_C_PAIS Into Form
+F.Intrinsic.String.Split("CODIGO_PAIS*!*DESCRIPCION","*!*",V.Local.sTitles)
+F.Intrinsic.String.Split("100*!*800","*!*",V.Local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE CODIGO_PAIS","CONX","select C_PAIS, DESCRIPCION from CFDI_C_PAIS",V.Local.sTitles,V.Local.iWidths,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,"=","***CANCEL***")
+ F.Intrinsic.Control.Else
+ F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.f_ComExt_Company.txtPais.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.EndIf
+Program.Sub.cmdPais_Click.End
+
+''''''''''''NODO DESTINATARIO '''''''''''
+Program.Sub.F_ComExt_Destinatario_Load.Start
+V.Local.sCustomer.Declare(String)
+V.Local.sShipID.Declare(String)
+V.Local.sSQL.Declare(String)
+
+'Gui.F_ComExt_SalesOrder.txtPResFiscal.Text(V.Local.sRet(0).Trim)
+GUI.F_ComExt_Destinatario.txtCliente.Text(V.Passed.000001)
+GUI.F_ComExt_Destinatario.txtClaveEnvio.Text(v.Passed.000003)
+
+V.Local.sCustomer.Set(V.Passed.000001)
+V.Local.sShipID.Set(v.Passed.000003)
+
+'Load existing data into Destinatario Form
+'F.Intrinsic.String.Concat("select * from CFDI_COMEXT_DEST WHERE CUSTOMER ='",V.Local.sPart,"'",V.Local.sSql)
+F.Intrinsic.String.Build("select * from CFDI_COMEXT_DEST WHERE CLAVE_ENVIO ='{0}' AND CLIENTE = '{1}'",V.Local.sShipID,V.Local.sCustomer,V.Local.sSQL)
+F.ODBC.Connection!conx.OpenRecordsetRO("rstLoadDest",V.Local.sSql)
+F.Intrinsic.Control.If(V.ODBC.conx!rstLoadDest.EOF,=,"False")
+	F.Intrinsic.Control.If(V.ODBC.conx!rstLoadDest.FieldValTrim!CLAVE_ENVIO,=,"0")
+	GUI.F_ComExt_Destinatario.txtClaveEnvio.Value(1)
+	GUI.F_ComExt_Destinatario.txtCliente.Value(2)
+	GUI.F_ComExt_Destinatario.txtEstado.Value(3)
+	GUI.F_ComExt_Destinatario.txtCP.Value(4)
+	GUI.F_ComExt_Destinatario.txtPais.Value(5)
+F.Intrinsic.Control.Endif
+	GUI.F_ComExt_Destinatario.txtEstado.Text(V.ODBC.conx!rstLoadDest.FieldValTrim!ESTADO)
+	GUI.F_ComExt_Destinatario.txtCP.Text(V.ODBC.conx!rstLoadDest.FieldValTrim!CODIGO_POSTAL)
+	GUI.F_ComExt_Destinatario.txtPais.Text(V.ODBC.conx!rstLoadDest.FieldValTrim!PAIS)
+F.Intrinsic.Control.EndIf
+gui.F_ComExt_Destinatario..Show
+
+Program.Sub.F_ComExt_Destinatario_Load.End
+
+Program.Sub.cmdPais_Click1.Start
+V.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+V.Local.sTitles.Declare(string)
+V.Local.iWidths.Declare(long)
+
+'Load Custom Browser from Custom Table CFDI_C_PAIS Into Form
+F.Intrinsic.String.Split("CODIGO_PAIS*!*DESCRIPCION","*!*",V.Local.sTitles)
+F.Intrinsic.String.Split("100*!*800","*!*",V.Local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE CODIGO_PAIS","CONX","select C_PAIS, DESCRIPCION from CFDI_C_PAIS",V.Local.sTitles,V.Local.iWidths,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,"=","***CANCEL***")
+ F.Intrinsic.Control.Else
+ F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	GUI.F_ComExt_Destinatario.txtPais.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdPais_Click1.End
+
+Program.Sub.cmdEstado_Click1.Start
+V.Local.sRet.Declare(string)
+V.Local.sSQL.Declare(string)
+V.Local.sTitles.Declare(string)
+V.Local.iWidths.Declare(long)
+
+'Load Custom Browser from Custom Table CFDI_C_ESTADO Into Form
+F.Intrinsic.String.Split("ESTADO*!*PAIS*!*NOMBRE_ESTADO","*!*",V.Local.sTitles)
+F.Intrinsic.String.Split("200*!*500*!*500","*!*",V.Local.iWidths)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("SELECCIONE CODIGO ESTADO DESDE CATALAGO DEL SAT","CONX","select ESTADO, PAIS, NOMBRE_ESTADO from CFDI_C_ESTADO",V.Local.sTitles,V.Local.iWidths,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,"=","***CANCEL***")
+ F.Intrinsic.Control.Else
+ F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	GUI.F_ComExt_Destinatario.txtEstado.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdEstado_Click1.End
+
+Program.Sub.cmdSaveDestinatario_Click.Start
+V.Local.sCustomer.Declare(String)
+V.Local.sShipID.Declare(String)
+V.Local.sSQL.Declare(String)
+
+
+V.Local.sCustomer.Set(V.Passed.000001)
+V.Local.sShipID.Set(v.Passed.000003)
+
+
+F.Intrinsic.String.Build("select * from CFDI_COMEXT_DEST WHERE CLAVE_ENVIO ='{0}'",V.Local.sShipID.Trim,V.Local.sSQL)
+F.ODBC.Connection!conx.OpenLocalRecordsetRW("rstDest",V.Local.sSql)
+
+'Save Sales Order data from form info into custom table CFDI_COMEXT_DEST 
+F.Intrinsic.Control.If(v.ODBC.CONX!rstDest.EOF,=,True)
+	F.ODBC.CONX!rstDest.AddNew
+	F.ODBC.Conx!rstDest.Set!CLAVE_ENVIO(V.Local.sShipID.SQLServerFriendly)
+f.Intrinsic.Control.EndIf	
+	F.ODBC.Conx!rstDest.Set!CLIENTE(V.Screen.F_ComExt_Destinatario!txtCliente.Text)
+	F.ODBC.Conx!rstDest.Set!ESTADO(V.Screen.F_ComExt_Destinatario!txtEstado.Text)
+	F.ODBC.Conx!rstDest.Set!CODIGO_POSTAL(V.Screen.F_ComExt_Destinatario!txtCP.Text)
+	F.ODBC.Conx!rstDest.Set!PAIS(V.Screen.F_ComExt_Destinatario!txtPais.Text)
+	F.ODBC.Conx!rstDest.Update
+	F.Intrinsic.UI.Msgbox("DATOS GUARDADOS")
+	F.ODBC.Conx!rstDest.Close
+
+Program.Sub.cmdSaveDestinatario_Click.End
+
+'''''''''''''ANEXO 24 CUSTOMER MASTER'''''''''''
+Program.Sub.F_Anexo24_Load.Start
+'v.Local.sCustomer.Declare
+'v.Local.sSQL.Declare
+
+''Load Existing Data into Form from Custom Table CFDI_ANEXO24_CUST
+'v.Local.sCustomer.Set(v.Passed.000002)
+'f.Intrinsic.String.Concat("Select * from CFDI_ANEXO24_CUST where CUSTOMER ='",v.Local.sCustomer,"'",v.Local.sSQL)
+'F.ODBC.Connection!conx.OpenRecordsetRO("rstLoadA24",V.Local.sSql)
+'F.Intrinsic.Control.If(V.ODBC.CONX!rstLoadA24.EOF,=,"False")
+'	Gui.F_Anex24_Customer.txtMaq.Text(V.ODBC.conx!rstLoadA24.FieldValTrim!NUM_MAQUILADORA)
+'	Gui.F_Anex24_Customer.txtPITEX.Text(V.ODBC.conx!rstLoadA24.FieldValTrim!NUM_PITEX)
+'	Gui.F_Anex24_Customer.txtECEX.Text(V.ODBC.conx!rstLoadA24.FieldValTrim!NUM_ECEX)
+'	Gui.F_Anex24_Customer.txtPPSec.Text(V.ODBC.conx!rstLoadA24.FieldValTrim!NUM_PPSEC)
+'F.Intrinsic.Control.EndIf
+Program.Sub.F_Anexo24_Load.End
+
+Program.Sub.cmdAnexo24_Save.Start
+'v.Local.sSQL.Declare
+'V.Local.sCustomer.Declare
+'V.Local.sCustomer.Set(V.Passed.000002)
+
+'F.Intrinsic.String.Build("SELECT * FROM CFDI_ANEXO24_CUST WHERE CUSTOMER = '{0}'",V.Local.sCustomer.Trim,V.Local.sSQL)
+'F.ODBC.Connection!CONX.OpenLocalRecordsetRW("RSTA24",v.Local.sSQL)
+'F.Intrinsic.Control.If(v.ODBC.CONX!RSTA24.EOF,=,True)
+'	F.ODBC.CONX!RSTA24.AddNew
+'	F.ODBC.CONX!RSTA24.Set!CUSTOMER(V.Local.sCustomer)
+'F.Intrinsic.Control.EndIf
+'F.ODBC.CONX!RSTA24.Set!NUM_MAQUILADORA(V.Screen.F_Anex24_Customer!txtMaq.Text)
+'F.ODBC.CONX!RSTA24.Set!NUM_PITEX(V.Screen.F_Anex24_Customer!txtPITEX.Text)
+'F.ODBC.CONX!RSTA24.Set!NUM_ECEX(V.Screen.F_Anex24_Customer!txtECEX.Text)
+'F.ODBC.CONX!RSTA24.Set!NUM_PPSEC(V.Screen.F_Anex24_Customer!txtPPSec.Text)
+'F.ODBC.CONX!RSTA24.Update
+'F.Intrinsic.UI.Msgbox("DATOS GUARDADOS")
+'F.ODBC.CONX!RSTA24.Close
+Program.Sub.cmdAnexo24_Save.End
+
+'''''''''''''ANEXO 24 VENDOR MASTER '''''''''''
+Program.Sub.F_Anexo24Vendor_Load.Start
+'v.Local.sVendor.Declare
+'v.Local.sSQL.Declare
+
+''Load Existing Data into Form from Custom Table CFDI_ANEXO24_VEND
+'v.Local.sVendor.Set(v.Passed.000002)
+'f.Intrinsic.String.Concat("Select * from CFDI_ANEXO24_VEND where VENDOR ='",v.Local.sVendor,"'",v.Local.sSQL)
+'F.ODBC.Connection!conx.OpenRecordsetRO("rstLoadA24",V.Local.sSql)
+'F.Intrinsic.Control.If(V.ODBC.CONX!rstLoadA24.EOF,=,"False")
+'	Gui.F_Anex24_Vendor.txtMaq.Text(V.ODBC.conx!rstLoadA24.FieldValTrim!NUM_MAQUILADORA)
+'	Gui.F_Anex24_Vendor.txtPITEX.Text(V.ODBC.conx!rstLoadA24.FieldValTrim!NUM_PITEX)
+'	Gui.F_Anex24_Vendor.txtECEX.Text(V.ODBC.conx!rstLoadA24.FieldValTrim!NUM_ECEX)
+'	Gui.F_Anex24_Vendor.txtPPSec.Text(V.ODBC.conx!rstLoadA24.FieldValTrim!NUM_PPSEC)
+'F.Intrinsic.Control.EndIf
+Program.Sub.F_Anexo24Vendor_Load.End
+
+Program.Sub.cmdAnexo24Vendor_Save.Start
+'v.Local.sSQL.Declare
+'V.Local.sVendor.Declare
+'V.Local.sVendor.Set(V.Passed.000002)
+
+'F.Intrinsic.String.Build("SELECT * FROM CFDI_ANEXO24_VEND WHERE VENDOR = '{0}'",V.Local.sVendor.Trim,V.Local.sSQL)
+'F.ODBC.Connection!CONX.OpenLocalRecordsetRW("RSTA24",v.Local.sSQL)
+'F.Intrinsic.Control.If(v.ODBC.CONX!RSTA24.EOF,=,True)
+'	F.ODBC.CONX!RSTA24.AddNew
+'	F.ODBC.CONX!RSTA24.Set!VENDOR(V.Local.sVendor)
+'F.Intrinsic.Control.EndIf
+'F.ODBC.CONX!RSTA24.Set!NUM_MAQUILADORA(V.Screen.F_Anex24_Vendor!txtMaq.Text)
+'F.ODBC.CONX!RSTA24.Set!NUM_PITEX(V.Screen.F_Anex24_Vendor!txtPITEX.Text)
+'F.ODBC.CONX!RSTA24.Set!NUM_ECEX(V.Screen.F_Anex24_Vendor!txtECEX.Text)
+'F.ODBC.CONX!RSTA24.Set!NUM_PPSEC(V.Screen.F_Anex24_Vendor!txtPPSec.Text)
+'F.ODBC.CONX!RSTA24.Update
+'F.Intrinsic.UI.Msgbox("DATOS GUARDADOS")
+'F.ODBC.CONX!RSTA24.Close
+Program.Sub.cmdAnexo24Vendor_Save.End
+
+'''''''''''''ANEXO 24 FIXES ASSETS'''''''''''
+Program.Sub.F_Anexo24FIXA_Load.Start
+'V.Local.sSQL.Declare
+
+'f.Intrinsic.String.Concat("Select * from CFDI_ANEXO24_FIXA where ID_NO ='",v.Global.sFA,"'",v.Local.sSQL)
+'F.ODBC.Connection!conx.OpenRecordsetRO("rstLoadFA",V.Local.sSql)
+'F.Intrinsic.Control.If(V.ODBC.CONX!rstLoadFA.EOF,=,"False")
+'	Gui.F_Anexo24_TIGIE.txtTIGIE.Text(V.ODBC.conx!rstLoadFA.FieldValTrim!TIGIE)
+'F.Intrinsic.Control.EndIf
+
+
+Program.Sub.F_Anexo24FIXA_Load.End
+
+Program.Sub.cmdTIGIEBrowser_Click.Start
+'V.Local.sRet.Declare
+'V.Local.sTitles.Declare
+'V.Local.iWidths.Declare(long)
+
+''Load Custom Browser from View V_COMPANY Into Form
+'F.Intrinsic.String.Split("CODIGO_TIGIE*!*NOMBRE","*!*",V.Local.sTitles)
+'F.Intrinsic.String.Split("500*!*500","*!*",V.Local.iWidths)
+'F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+'F.Intrinsic.UI.Browser("SELECCIONE CODIGO TIGIE DESDE CATALAGO DEL SAT","CONX","select * from CFDI_C_TIGIE",V.Local.sTitles,V.Local.iWidths,V.Local.sRet)
+'F.Intrinsic.Control.If(V.Local.sRet,"=","***CANCEL***")
+'F.Intrinsic.Control.Else
+'	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+'	GUI.F_Anexo24_TIGIE.txtTIGIE.Text(V.Local.sRet(0).Trim)
+'F.Intrinsic.Control.EndIf	
+Program.Sub.cmdTIGIEBrowser_Click.End
+
+Program.Sub.F_Anexo24TIGIE_Save.Start
+'v.Local.sSQL.Declare
+
+'F.Intrinsic.String.Build("SELECT * FROM CFDI_ANEXO24_FIXA WHERE ID_NO = '{0}'",v.Global.sFA.Trim,V.Local.sSQL)
+'F.ODBC.Connection!CONX.OpenLocalRecordsetRW("RSTAFAS",v.Local.sSQL)
+'F.Intrinsic.Control.If(v.ODBC.CONX!RSTAFAS.EOF,=,True)
+'	F.ODBC.CONX!RSTAFAS.AddNew
+'	F.ODBC.CONX!RSTAFAS.Set!ID_NO(V.Global.sFA)
+'F.Intrinsic.Control.EndIf
+'F.ODBC.CONX!RSTAFAS.Set!TIGIE(V.Screen.F_Anexo24_TIGIE!txtTIGIE.Text)
+'F.ODBC.CONX!RSTAFAS.Update
+'F.Intrinsic.UI.Msgbox("DATOS GUARDADOS")
+'F.ODBC.CONX!RSTAFAS.Close
+
+Program.Sub.F_Anexo24TIGIE_Save.End
+
+'''''''''''''PEDIMENTO LOCATED ON LOT/BIN PO'''''''''''
+Program.Sub.cmdSavePedimento_Click.Start
+'V.Local.sSQL.Declare
+
+
+''Save part info into custom table CFDI_A24_PED_HEADER
+'F.Intrinsic.String.Build("SELECT * FROM CFDI_A24_PED_HEADER WHERE PUCHASE_ORDER = '{0}' AND RECEIVER = '{1}'",V.Global.sPO.Trim,v.Global.sReceiver.Trim,V.Local.sSQL)
+'F.ODBC.Connection!CONX.OpenLocalRecordsetRW("RSTPH",v.Local.sSQL)
+'F.Intrinsic.Control.If(v.ODBC.CONX!RSTPH.EOF,=,True)
+'	F.ODBC.CONX!RSTPH.AddNew
+'	F.ODBC.Conx!RSTPH.Set!PURCHASE_ORDER(V.Global.sPO)
+'	F.ODBC.Conx!RSTPH.Set!RECEIVER(V.Global.sReceiver)
+'	F.ODBC.Conx!RSTPH.Set!LOT(V.Global.sLot)
+'	F.Intrinsic.Control.EndIf
+'	F.ODBC.CONX!RSTPH.Set!FECHA_DE_ENTRADA(V.Screen.F_Anex24_Pedimento!dtpFechaPedimento.Text)
+'	F.ODBC.CONX!RSTPH.Set!NO_PEDIMENTO(V.Screen.F_Anex24_Pedimento!txtNoPed.Text)
+'	F.ODBC.CONX!RSTPH.Set!CLAVE_PEDIMENTO(V.Screen.F_Anex24_Pedimento!txtClavePed.Text)
+'	F.ODBC.CONX!RSTPH.Set!ADUANA_ES(V.Screen.F_Anex24_Pedimento!txtAduanaES.Text)
+'	F.ODBC.CONX!RSTPH.Set!PROOVEDOR(V.Screen.F_Anex24_Pedimento!txtProveedor.Text)
+'	F.ODBC.CONX!RSTPH.Set!FECHA_PAGO(V.Screen.F_Anex24_Pedimento!dtpFechaPago.TabIndex.Text) 
+'	F.ODBC.Conx!RSTPH.Update
+'	'F.Intrinsic.UI.Msgbox("DATOS GUARDADOS")
+'	F.ODBC.Conx!RSTPH.Close
+'		
+''Save part info into custom table CFDI_A24_PED_LINEA	
+'F.Intrinsic.String.Build("SELECT * FROM CFDI_A24_PED_LINEA WHERE PUCHASE_ORDER = '{0}' AND RECEIVER = '{1}'",V.Global.sPO.Trim,v.Global.sReceiver.Trim,V.Local.sSQL)
+'F.ODBC.Connection!CONX.OpenLocalRecordsetRW("RSTPL",v.Local.sSQL)
+'F.Intrinsic.Control.If(v.ODBC.CONX!RSTPL.EOF,=,True)
+'	F.ODBC.CONX!RSTPL.AddNew
+'	F.ODBC.Conx!RSTPL.Set!PURCHASE_ORDER(V.Global.sPO)
+'	F.ODBC.Conx!RSTPL.Set!RECEIVER(V.Global.sReceiver)
+'	F.ODBC.Conx!RSTPL.Set!LOT(V.Global.sLot)
+'	F.Intrinsic.Control.EndIf
+'	F.ODBC.CONX!RSTPL.Set!DESC(V.Screen.F_Anex24_Pedimento!txtDesc.Text)
+'	F.ODBC.CONX!RSTPL.Set!CANTIDAD_UMT(V.Screen.F_Anex24_Pedimento!txtCantMerc.Text)
+'	F.ODBC.CONX!RSTPL.Set!UMT(V.Screen.F_Anex24_Pedimento!txtUnidadMedida.Text)
+'	F.ODBC.CONX!RSTPL.Set!VAL_ADU_USD(V.Screen.F_Anex24_Pedimento!txtValorAduana.Text)
+'	F.ODBC.CONX!RSTPL.Set!IMP_PRECIO_PAG(V.Screen.F_Anex24_Pedimento!txtValorUnit.Text)
+'	F.ODBC.CONX!RSTPL.Set!P_VC(V.Screen.F_Anex24_Pedimento!txtLugarOrigen.Text) 
+'	F.ODBC.CONX!RSTPL.Set!TASA_LINEA(V.Screen.F_Anex24_Pedimento!txtTasaImpuesto.Text)
+'	F.ODBC.CONX!RSTPL.Set!IMPORTE(V.Screen.F_Anex24_Pedimento!txtImporte.Text)
+'	F.ODBC.Conx!RSTPL.Update
+'	F.Intrinsic.UI.Msgbox("DATOS GUARDADOS")
+'	F.ODBC.Conx!RSTPL.Close
+'	
+Program.Sub.cmdSavePedimento_Click.End
+
+Program.Sub.F_Anexo24Pedimento_Load.Start
+'v.Local.sSQL.Declare
+
+''Load Existing Data into Form from Custom Table CFDI_A24_PED_HEADER
+'F.Intrinsic.String.Build("SELECT * FROM CFDI_A24_PED_LINEA WHERE PUCHASE_ORDER = '{0}' AND RECEIVER = '{1}'",V.Global.sPO.Trim,v.Global.sReceiver.Trim,V.Local.sSQL)
+'F.ODBC.Connection!conx.OpenRecordsetRO("rstLoadA24PH",V.Local.sSql)
+'F.Intrinsic.Control.If(V.ODBC.CONX!rstLoadA24PH.EOF,=,"False")
+'	Gui.F_Anex24_Pedimento.dtpFechaPedimento.Text(V.ODBC.conx!rstLoadA24PH.FieldValTrim!FECHA_DE_ENTRADA)
+'	Gui.F_Anex24_Pedimento.txtNoPed.Text(V.ODBC.conx!rstLoadA24PH.FieldValTrim!NO_PEDIMENTO)
+'	Gui.F_Anex24_Pedimento.txtClavePed.Text(V.ODBC.conx!rstLoadA24PH.FieldValTrim!CLAVE_PEDIMENTO)
+'	Gui.F_Anex24_Pedimento.txtAduanaES.Text(V.ODBC.conx!rstLoadA24PH.FieldValTrim!ADUANA_ES)
+'	Gui.F_Anex24_Pedimento.txtProveedor.Text(V.ODBC.conx!rstLoadA24PH.FieldValTrim!PROOVEDOR)
+'	Gui.F_Anex24_Pedimento.dtpFechaPago.Text(V.ODBC.conx!rstLoadA24PH.FieldValTrim!FECHA_PAGO)
+'F.Intrinsic.Control.EndIf
+
+
+''Load Existing Data into Form from Custom Table CFDI_A24_PED_LINEA
+'F.Intrinsic.String.Build("SELECT * FROM CFDI_A24_PED_LINEA WHERE PUCHASE_ORDER = '{0}' AND RECEIVER = '{1}'",V.Global.sPO.Trim,v.Global.sReceiver.Trim,V.Local.sSQL)
+
+'F.ODBC.Connection!conx.OpenRecordsetRO("rstLoadA24PL",V.Local.sSql)
+'F.Intrinsic.Control.If(V.ODBC.CONX!rstLoadA24PL.EOF,=,"False")
+'	Gui.F_Anex24_Pedimento.txtDesc.Text(V.ODBC.conx!rstLoadA24PH.FieldValTrim!DESC)
+'	Gui.F_Anex24_Pedimento.txtCantMerc.Text(V.ODBC.conx!rstLoadA24PH.FieldValTrim!CANTIDAD_UMT)
+'	Gui.F_Anex24_Pedimento.txtUnidadMedida.Text(V.ODBC.conx!rstLoadA24PH.FieldValTrim!UMT)
+'	Gui.F_Anex24_Pedimento.txtValorAduana.Text(V.ODBC.conx!rstLoadA24PH.FieldValTrim!VAL_ADU_USD)
+'	Gui.F_Anex24_Pedimento.txtValorUnit.Text(V.ODBC.conx!rstLoadA24PH.FieldValTrim!IMP_PRECIO_PAG)
+'	Gui.F_Anex24_Pedimento.txtLugarOrigen.Text(V.ODBC.conx!rstLoadA24PH.FieldValTrim!P_VC)
+'	Gui.F_Anex24_Pedimento.txtTasaImpuesto.Text(V.ODBC.conx!rstLoadA24PH.FieldValTrim!TASA_LINEA)
+'	Gui.F_Anex24_Pedimento.txtImporte.Text(V.ODBC.conx!rstLoadA24PH.FieldValTrim!IMPORTE)
+'F.Intrinsic.Control.EndIf
+
+Program.Sub.F_Anexo24Pedimento_Load.End
+
+''''''''''''UNLOADS'''''''''''
+Program.Sub.F_ComExtInventory_UnLoad.Start
+F.ODBC.Connection!CONX.Close
+F.Intrinsic.Control.End
+Program.Sub.F_ComExtInventory_UnLoad.End
+
+Program.Sub.F_ComExt_SalesOrder_UnLoad.Start
+F.ODBC.Connection!CONX.Close
+F.Intrinsic.Control.End
+
+Program.Sub.F_ComExt_SalesOrder_UnLoad.End
+
+Program.Sub.f_ComExt_Company_UnLoad1.Start
+F.ODBC.Connection!CONX.Close
+F.Intrinsic.Control.End
+
+Program.Sub.f_ComExt_Company_UnLoad1.End
+
+Program.Sub.Unload.Start
+F.ODBC.Connection!CONX.Close
+F.Intrinsic.Control.End
+Program.Sub.Unload.End
